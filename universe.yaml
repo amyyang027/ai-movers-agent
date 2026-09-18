@@ -1,0 +1,57 @@
+# PLACEHOLDER universe for building/testing the pipeline.
+# Must be reviewed by the team and frozen by Day 3 (see task doc).
+# Each entry needs a one-line reason it's "AI-related."
+
+themes:
+  - name: AI Chips & Semiconductors
+    type: etf
+    ticker: SMH
+    reason: Semiconductor ETF, heavily weighted to AI chipmakers (Nvidia, TSMC, Broadcom).
+  - name: Robotics & Automation
+    type: etf
+    ticker: BOTZ
+    reason: Dedicated robotics/AI automation ETF.
+  - name: AI & Big Data
+    type: etf
+    ticker: AIQ
+    reason: Broad AI-themed ETF tracking companies developing/using AI.
+  - name: Cloud & AI Infrastructure
+    type: basket
+    tickers: [MSFT, AMZN, GOOGL]
+    reason: Hyperscalers building the cloud/compute backbone AI models run on.
+  - name: AI Software & Applications
+    type: basket
+    tickers: [PLTR, CRM, NOW]
+    reason: Software companies selling AI-driven applications/platforms.
+
+stocks:
+  - ticker: NVDA
+    theme: AI Chips & Semiconductors
+    reason: Dominant AI training/inference GPU maker.
+  - ticker: AMD
+    theme: AI Chips & Semiconductors
+    reason: Major AI accelerator competitor to Nvidia.
+  - ticker: TSM
+    theme: AI Chips & Semiconductors
+    reason: Manufactures the chips AI hardware depends on.
+  - ticker: MSFT
+    theme: Cloud & AI Infrastructure
+    reason: OpenAI partner, Azure AI services.
+  - ticker: GOOGL
+    theme: Cloud & AI Infrastructure
+    reason: Gemini models, TPUs, Google Cloud AI.
+  - ticker: AMZN
+    theme: Cloud & AI Infrastructure
+    reason: AWS AI infrastructure and Bedrock.
+  - ticker: META
+    theme: AI Software & Applications
+    reason: Llama models, AI-driven ad targeting and recommendation systems.
+  - ticker: PLTR
+    theme: AI Software & Applications
+    reason: AI/ML data analytics platform for enterprise and government.
+  - ticker: CRM
+    theme: AI Software & Applications
+    reason: Agentforce/Einstein AI built into Salesforce products.
+  - ticker: AVGO
+    theme: AI Chips & Semiconductors
+    reason: Custom AI accelerator (ASIC) designer for hyperscalers.
