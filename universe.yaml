@@ -1,57 +1,218 @@
-# PLACEHOLDER universe for building/testing the pipeline.
+# Universe for the Daily AI Movers Agent.
 # Must be reviewed by the team and frozen by Day 3 (see task doc).
-# Each entry needs a one-line reason it's "AI-related."
+# 10 themes, 50 stocks (5 per theme). Each theme's return is the equal-weighted
+# average of its own stocks' returns (type: basket) - simplest way to keep the
+# theme ranking and the stock ranking self-consistent.
 
 themes:
   - name: AI Chips & Semiconductors
-    type: etf
-    ticker: SMH
-    reason: Semiconductor ETF, heavily weighted to AI chipmakers (Nvidia, TSMC, Broadcom).
-  - name: Robotics & Automation
-    type: etf
-    ticker: BOTZ
-    reason: Dedicated robotics/AI automation ETF.
-  - name: AI & Big Data
-    type: etf
-    ticker: AIQ
-    reason: Broad AI-themed ETF tracking companies developing/using AI.
+    type: basket
+    tickers: [NVDA, AMD, AVGO, TSM, QCOM, MU]
+    reason: Chips that power AI training and inference workloads.
   - name: Cloud & AI Infrastructure
     type: basket
-    tickers: [MSFT, AMZN, GOOGL]
-    reason: Hyperscalers building the cloud/compute backbone AI models run on.
-  - name: AI Software & Applications
+    tickers: [MSFT, AMZN, GOOGL, ORCL, IBM]
+    reason: Hyperscale cloud platforms hosting and building AI models/services.
+  - name: Enterprise AI Software
     type: basket
-    tickers: [PLTR, CRM, NOW]
-    reason: Software companies selling AI-driven applications/platforms.
+    tickers: [CRM, NOW, ADBE, PLTR, WDAY]
+    reason: Software companies embedding AI/agents into business applications.
+  - name: Cybersecurity AI
+    type: basket
+    tickers: [CRWD, PANW, ZS, S, FTNT]
+    reason: Security vendors using AI/ML for threat detection and response.
+  - name: AI Data & Analytics
+    type: basket
+    tickers: [SNOW, MDB, DDOG, ESTC, AI]
+    reason: Data platforms enabling AI training, retrieval, and real-time analytics.
+  - name: Robotics & Industrial Automation
+    type: basket
+    tickers: [ISRG, ROK, CGNX, TER, SYM]
+    reason: Physical AI - robotics and automation hardware/software.
+  - name: Autonomous Vehicles & Mobility AI
+    type: basket
+    tickers: [TSLA, MBLY, APTV, UBER, GM]
+    reason: AI-driven self-driving and mobility technology.
+  - name: Consumer Internet & AI Platforms
+    type: basket
+    tickers: [META, NFLX, SPOT, PINS, TTD]
+    reason: Consumer platforms using AI for recommendations, personalization, ad targeting.
+  - name: AI Networking & Data Center Infrastructure
+    type: basket
+    tickers: [ANET, CSCO, VRT, EQIX, DELL]
+    reason: Networking, power, and data center infrastructure that AI compute depends on.
+  - name: Healthcare AI
+    type: basket
+    tickers: [TEM, VEEV, DOCS, GEHC]
+    reason: AI applied to healthcare data, diagnostics, and clinical/commercial workflows.
 
 stocks:
+  # AI Chips & Semiconductors
   - ticker: NVDA
     theme: AI Chips & Semiconductors
     reason: Dominant AI training/inference GPU maker.
   - ticker: AMD
     theme: AI Chips & Semiconductors
     reason: Major AI accelerator competitor to Nvidia.
-  - ticker: TSM
-    theme: AI Chips & Semiconductors
-    reason: Manufactures the chips AI hardware depends on.
-  - ticker: MSFT
-    theme: Cloud & AI Infrastructure
-    reason: OpenAI partner, Azure AI services.
-  - ticker: GOOGL
-    theme: Cloud & AI Infrastructure
-    reason: Gemini models, TPUs, Google Cloud AI.
-  - ticker: AMZN
-    theme: Cloud & AI Infrastructure
-    reason: AWS AI infrastructure and Bedrock.
-  - ticker: META
-    theme: AI Software & Applications
-    reason: Llama models, AI-driven ad targeting and recommendation systems.
-  - ticker: PLTR
-    theme: AI Software & Applications
-    reason: AI/ML data analytics platform for enterprise and government.
-  - ticker: CRM
-    theme: AI Software & Applications
-    reason: Agentforce/Einstein AI built into Salesforce products.
   - ticker: AVGO
     theme: AI Chips & Semiconductors
     reason: Custom AI accelerator (ASIC) designer for hyperscalers.
+  - ticker: TSM
+    theme: AI Chips & Semiconductors
+    reason: Manufactures the chips AI hardware depends on.
+  - ticker: QCOM
+    theme: AI Chips & Semiconductors
+    reason: AI silicon for mobile and edge devices.
+  - ticker: MU
+    theme: AI Chips & Semiconductors
+    reason: High-bandwidth memory (HBM) supplier critical to AI accelerators.
+
+  # Cloud & AI Infrastructure
+  - ticker: MSFT
+    theme: Cloud & AI Infrastructure
+    reason: OpenAI partner, Azure AI services.
+  - ticker: AMZN
+    theme: Cloud & AI Infrastructure
+    reason: AWS AI infrastructure and Bedrock.
+  - ticker: GOOGL
+    theme: Cloud & AI Infrastructure
+    reason: Gemini models, TPUs, Google Cloud AI.
+  - ticker: ORCL
+    theme: Cloud & AI Infrastructure
+    reason: Oracle Cloud Infrastructure AI compute and database AI features.
+  - ticker: IBM
+    theme: Cloud & AI Infrastructure
+    reason: Watsonx AI platform and hybrid cloud AI services.
+
+  # Enterprise AI Software
+  - ticker: CRM
+    theme: Enterprise AI Software
+    reason: Agentforce/Einstein AI built into Salesforce products.
+  - ticker: NOW
+    theme: Enterprise AI Software
+    reason: ServiceNow AI-driven workflow automation platform.
+  - ticker: ADBE
+    theme: Enterprise AI Software
+    reason: Firefly/Sensei generative AI built into creative and marketing tools.
+  - ticker: PLTR
+    theme: Enterprise AI Software
+    reason: AI/ML data analytics platform for enterprise and government.
+  - ticker: WDAY
+    theme: Enterprise AI Software
+    reason: AI-driven HR/finance enterprise software.
+
+  # Cybersecurity AI
+  - ticker: CRWD
+    theme: Cybersecurity AI
+    reason: AI-powered endpoint threat detection.
+  - ticker: PANW
+    theme: Cybersecurity AI
+    reason: AI-driven network and cloud security platform.
+  - ticker: ZS
+    theme: Cybersecurity AI
+    reason: AI-powered zero trust security platform.
+  - ticker: S
+    theme: Cybersecurity AI
+    reason: SentinelOne - AI-native endpoint/cloud security.
+  - ticker: FTNT
+    theme: Cybersecurity AI
+    reason: AI-driven network security appliances and services.
+
+  # AI Data & Analytics
+  - ticker: SNOW
+    theme: AI Data & Analytics
+    reason: Cloud data platform powering AI model training and retrieval.
+  - ticker: MDB
+    theme: AI Data & Analytics
+    reason: Database platform with vector search for AI applications.
+  - ticker: DDOG
+    theme: AI Data & Analytics
+    reason: AI-powered observability and analytics platform.
+  - ticker: ESTC
+    theme: AI Data & Analytics
+    reason: AI-powered search and analytics engine.
+  - ticker: AI
+    theme: AI Data & Analytics
+    reason: C3.ai - enterprise AI application and analytics software.
+
+  # Robotics & Industrial Automation
+  - ticker: ISRG
+    theme: Robotics & Industrial Automation
+    reason: AI-assisted robotic surgical systems.
+  - ticker: ROK
+    theme: Robotics & Industrial Automation
+    reason: Industrial automation and AI-driven manufacturing systems.
+  - ticker: CGNX
+    theme: Robotics & Industrial Automation
+    reason: Machine vision systems used in AI-driven robotics and automation.
+  - ticker: TER
+    theme: Robotics & Industrial Automation
+    reason: Owns Universal Robots; automated test and robotics equipment.
+  - ticker: SYM
+    theme: Robotics & Industrial Automation
+    reason: AI-powered warehouse robotics and automation platform.
+
+  # Autonomous Vehicles & Mobility AI
+  - ticker: TSLA
+    theme: Autonomous Vehicles & Mobility AI
+    reason: Full Self-Driving and AI/robotics initiatives.
+  - ticker: MBLY
+    theme: Autonomous Vehicles & Mobility AI
+    reason: Autonomous driving and ADAS chip/software maker.
+  - ticker: APTV
+    theme: Autonomous Vehicles & Mobility AI
+    reason: Advanced driver assistance and autonomous vehicle tech supplier.
+  - ticker: UBER
+    theme: Autonomous Vehicles & Mobility AI
+    reason: AI-driven ride routing and autonomous vehicle partnerships.
+  - ticker: GM
+    theme: Autonomous Vehicles & Mobility AI
+    reason: Investing heavily in autonomous driving technology.
+
+  # Consumer Internet & AI Platforms
+  - ticker: META
+    theme: Consumer Internet & AI Platforms
+    reason: Llama models, AI-driven ad targeting and recommendation systems.
+  - ticker: NFLX
+    theme: Consumer Internet & AI Platforms
+    reason: AI-driven content recommendation engine.
+  - ticker: SPOT
+    theme: Consumer Internet & AI Platforms
+    reason: AI-driven music/podcast personalization.
+  - ticker: PINS
+    theme: Consumer Internet & AI Platforms
+    reason: AI-powered visual search and content discovery.
+  - ticker: TTD
+    theme: Consumer Internet & AI Platforms
+    reason: AI-driven programmatic advertising platform.
+
+  # AI Networking & Data Center Infrastructure
+  - ticker: ANET
+    theme: AI Networking & Data Center Infrastructure
+    reason: High-speed networking gear for AI data centers.
+  - ticker: CSCO
+    theme: AI Networking & Data Center Infrastructure
+    reason: AI-optimized networking infrastructure.
+  - ticker: VRT
+    theme: AI Networking & Data Center Infrastructure
+    reason: Power and thermal management for AI data centers.
+  - ticker: EQIX
+    theme: AI Networking & Data Center Infrastructure
+    reason: Data center REIT hosting AI compute infrastructure.
+  - ticker: DELL
+    theme: AI Networking & Data Center Infrastructure
+    reason: AI server and infrastructure hardware maker.
+
+  # Healthcare AI
+  - ticker: TEM
+    theme: Healthcare AI
+    reason: AI-driven precision medicine and healthcare data platform.
+  - ticker: VEEV
+    theme: Healthcare AI
+    reason: AI-enabled life sciences and healthcare data software.
+  - ticker: DOCS
+    theme: Healthcare AI
+    reason: AI-powered healthcare professional networking/data platform.
+  - ticker: GEHC
+    theme: Healthcare AI
+    reason: AI-driven medical imaging and diagnostics equipment.
