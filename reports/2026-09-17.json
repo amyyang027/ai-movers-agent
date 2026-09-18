@@ -1,0 +1,638 @@
+{
+  "date": "2026-09-17",
+  "benchmark": {
+    "ticker": "SPY",
+    "return": 0.011338770638551932
+  },
+  "breadth": {
+    "up": 40,
+    "down": 10,
+    "flat": 0,
+    "total": 50
+  },
+  "themes": [
+    {
+      "name": "Healthcare AI",
+      "error": false,
+      "return": 0.04586987616987856,
+      "trend_5d": 0.11428520400425796,
+      "rank": 1
+    },
+    {
+      "name": "AI Chips & Semiconductors",
+      "error": false,
+      "return": 0.03631893241104759,
+      "trend_5d": 0.020260238512456303,
+      "rank": 2
+    },
+    {
+      "name": "AI Data & Analytics",
+      "error": false,
+      "return": 0.03147871277098333,
+      "trend_5d": 0.04767283158102642,
+      "rank": 3
+    },
+    {
+      "name": "Cloud & AI Infrastructure",
+      "error": false,
+      "return": 0.020492199868866523,
+      "trend_5d": 0.01057295738344688,
+      "rank": 4
+    },
+    {
+      "name": "AI Networking & Data Center Infrastructure",
+      "error": false,
+      "return": 0.019233561115393004,
+      "trend_5d": 0.0437148529264856,
+      "rank": 5
+    },
+    {
+      "name": "Autonomous Vehicles & Mobility AI",
+      "error": false,
+      "return": 0.016700729978577987,
+      "trend_5d": -0.01524709324657112,
+      "rank": 6
+    },
+    {
+      "name": "Robotics & Industrial Automation",
+      "error": false,
+      "return": 0.014784599373424068,
+      "trend_5d": 0.01257301849834771,
+      "rank": 7
+    },
+    {
+      "name": "Cybersecurity AI",
+      "error": false,
+      "return": 0.010546791475482587,
+      "trend_5d": 0.14987894410823405,
+      "rank": 8
+    },
+    {
+      "name": "Enterprise AI Software",
+      "error": false,
+      "return": 0.008113373593666573,
+      "trend_5d": 0.04194324310835791,
+      "rank": 9
+    },
+    {
+      "name": "Consumer Internet & AI Platforms",
+      "error": false,
+      "return": -0.01381829602955944,
+      "trend_5d": 0.011802670294732897,
+      "rank": 10
+    }
+  ],
+  "stocks": [
+    {
+      "ticker": "TEM",
+      "theme": "Healthcare AI",
+      "error": false,
+      "return": 0.14849221094754905,
+      "trend_5d": 0.3680626489615253,
+      "high": 81.28,
+      "low": 72.61,
+      "volume": 17128001.433026,
+      "rank": 1
+    },
+    {
+      "ticker": "AMD",
+      "theme": "AI Chips & Semiconductors",
+      "error": false,
+      "return": 0.06359024390243917,
+      "trend_5d": 0.08238681493248601,
+      "high": 551.42,
+      "low": 527.6,
+      "volume": 28471628.347686,
+      "rank": 2
+    },
+    {
+      "ticker": "WDAY",
+      "theme": "Enterprise AI Software",
+      "error": false,
+      "return": 0.06135492117596941,
+      "trend_5d": 0.07666540601869354,
+      "high": 201,
+      "low": 183.605,
+      "volume": 4253215.600384,
+      "rank": 3
+    },
+    {
+      "ticker": "MU",
+      "theme": "AI Chips & Semiconductors",
+      "error": false,
+      "return": 0.05498893745615452,
+      "trend_5d": 9.208008921546273e-05,
+      "high": 986.2,
+      "low": 953.5,
+      "volume": 22091590.922743,
+      "rank": 4
+    },
+    {
+      "ticker": "ORCL",
+      "theme": "Cloud & AI Infrastructure",
+      "error": false,
+      "return": 0.05189997205923458,
+      "trend_5d": -0.015365502811560017,
+      "high": 152,
+      "low": 146.15,
+      "volume": 27742415.798516,
+      "rank": 5
+    },
+    {
+      "ticker": "ESTC",
+      "theme": "AI Data & Analytics",
+      "error": false,
+      "return": 0.046336587086910574,
+      "trend_5d": 0.06576425491135596,
+      "high": 89.73,
+      "low": 83.81,
+      "volume": 1997770.136207,
+      "rank": 6
+    },
+    {
+      "ticker": "MDB",
+      "theme": "AI Data & Analytics",
+      "error": false,
+      "return": 0.04538449274592127,
+      "trend_5d": 0.052290903255142185,
+      "high": 403,
+      "low": 372,
+      "volume": 1546004.600781,
+      "rank": 7
+    },
+    {
+      "ticker": "DELL",
+      "theme": "AI Networking & Data Center Infrastructure",
+      "error": false,
+      "return": 0.044577393527312825,
+      "trend_5d": 0.16142276262287303,
+      "high": 593.9799,
+      "low": 565.5,
+      "volume": 9350698.081082,
+      "rank": 8
+    },
+    {
+      "ticker": "TER",
+      "theme": "Robotics & Industrial Automation",
+      "error": false,
+      "return": 0.035116517660853,
+      "trend_5d": -0.04608444312380133,
+      "high": 360.26,
+      "low": 350,
+      "volume": 2598552.379899,
+      "rank": 9
+    },
+    {
+      "ticker": "SYM",
+      "theme": "Robotics & Industrial Automation",
+      "error": false,
+      "return": 0.0347947112038971,
+      "trend_5d": 0.08540145985401448,
+      "high": 45.55,
+      "low": 43.918,
+      "volume": 2365687.203351,
+      "rank": 10
+    },
+    {
+      "ticker": "ZS",
+      "theme": "Cybersecurity AI",
+      "error": false,
+      "return": 0.0307443365695792,
+      "trend_5d": 0.20791534132615608,
+      "high": 198.93,
+      "low": 188.661,
+      "volume": 3019129.138544,
+      "rank": 11
+    },
+    {
+      "ticker": "TSM",
+      "theme": "AI Chips & Semiconductors",
+      "error": false,
+      "return": 0.030020109164033304,
+      "trend_5d": 0.005209915192860404,
+      "high": 430.53,
+      "low": 423.39,
+      "volume": 12447742.56025,
+      "rank": 12
+    },
+    {
+      "ticker": "MBLY",
+      "theme": "Autonomous Vehicles & Mobility AI",
+      "error": false,
+      "return": 0.028132992327365658,
+      "trend_5d": -0.020706455542022106,
+      "high": 8.295,
+      "low": 7.905,
+      "volume": 9378879.624067,
+      "rank": 13
+    },
+    {
+      "ticker": "GM",
+      "theme": "Autonomous Vehicles & Mobility AI",
+      "error": false,
+      "return": 0.027642662237513216,
+      "trend_5d": 0.005805852299117564,
+      "high": 87.86,
+      "low": 86.15,
+      "volume": 8832825.814194,
+      "rank": 14
+    },
+    {
+      "ticker": "NVDA",
+      "theme": "AI Chips & Semiconductors",
+      "error": false,
+      "return": 0.025432445067788745,
+      "trend_5d": 0.004488001465469793,
+      "high": 219.905,
+      "low": 217.145,
+      "volume": 94191346.866285,
+      "rank": 15
+    },
+    {
+      "ticker": "DOCS",
+      "theme": "Healthcare AI",
+      "error": false,
+      "return": 0.02428681572860447,
+      "trend_5d": 0.07527316875758805,
+      "high": 26.605,
+      "low": 25.555,
+      "volume": 2171310.34994,
+      "rank": 16
+    },
+    {
+      "ticker": "CSCO",
+      "theme": "AI Networking & Data Center Infrastructure",
+      "error": false,
+      "return": 0.023204009652868063,
+      "trend_5d": 0.026061057334326065,
+      "high": 111.44,
+      "low": 109.32,
+      "volume": 16158853.17277,
+      "rank": 17
+    },
+    {
+      "ticker": "AVGO",
+      "theme": "AI Chips & Semiconductors",
+      "error": false,
+      "return": 0.02294483225825461,
+      "trend_5d": -0.03749688218828806,
+      "high": 350.94,
+      "low": 345.31,
+      "volume": 24817567.17323,
+      "rank": 18
+    },
+    {
+      "ticker": "TSLA",
+      "theme": "Autonomous Vehicles & Mobility AI",
+      "error": false,
+      "return": 0.022676496872207297,
+      "trend_5d": 0.007261524920233242,
+      "high": 374.12,
+      "low": 363.22,
+      "volume": 38924257.201049,
+      "rank": 19
+    },
+    {
+      "ticker": "DDOG",
+      "theme": "AI Data & Analytics",
+      "error": false,
+      "return": 0.022574634949521277,
+      "trend_5d": 0.06440555655782076,
+      "high": 239.045,
+      "low": 227.365,
+      "volume": 2804706.011247,
+      "rank": 20
+    },
+    {
+      "ticker": "SNOW",
+      "theme": "AI Data & Analytics",
+      "error": false,
+      "return": 0.022264515739230273,
+      "trend_5d": 0.026295038214242172,
+      "high": 344.66,
+      "low": 328.774,
+      "volume": 4294080.40301,
+      "rank": 21
+    },
+    {
+      "ticker": "AMZN",
+      "theme": "Cloud & AI Infrastructure",
+      "error": false,
+      "return": 0.021263620100829383,
+      "trend_5d": -0.002778990829330197,
+      "high": 252.73,
+      "low": 249.24,
+      "volume": 30447448.766232,
+      "rank": 22
+    },
+    {
+      "ticker": "QCOM",
+      "theme": "AI Chips & Semiconductors",
+      "error": false,
+      "return": 0.020937026617615206,
+      "trend_5d": 0.06688150158299422,
+      "high": 191.91,
+      "low": 187.7601,
+      "volume": 12327858.308136,
+      "rank": 23
+    },
+    {
+      "ticker": "AI",
+      "theme": "AI Data & Analytics",
+      "error": false,
+      "return": 0.02083333333333326,
+      "trend_5d": 0.029608404966571022,
+      "high": 10.9,
+      "low": 10.5,
+      "volume": 2936674.303133,
+      "rank": 24
+    },
+    {
+      "ticker": "CRWD",
+      "theme": "Cybersecurity AI",
+      "error": false,
+      "return": 0.01798143851508116,
+      "trend_5d": 0.17638609594943966,
+      "high": 250.32,
+      "low": 233.19,
+      "volume": 12340938.736,
+      "rank": 25
+    },
+    {
+      "ticker": "MSFT",
+      "theme": "Cloud & AI Infrastructure",
+      "error": false,
+      "return": 0.015194778706914214,
+      "trend_5d": 0.010783039558118768,
+      "high": 501.47,
+      "low": 493.17,
+      "volume": 17889521.319454,
+      "rank": 26
+    },
+    {
+      "ticker": "GEHC",
+      "theme": "Healthcare AI",
+      "error": false,
+      "return": 0.01504173885651272,
+      "trend_5d": 0.003191158156911511,
+      "high": 65.255,
+      "low": 62.995,
+      "volume": 4512608.257678,
+      "rank": 27
+    },
+    {
+      "ticker": "META",
+      "theme": "Consumer Internet & AI Platforms",
+      "error": false,
+      "return": 0.01336679983959832,
+      "trend_5d": 0.05886278283000701,
+      "high": 683.2,
+      "low": 667.05,
+      "volume": 15927994.339433,
+      "rank": 28
+    },
+    {
+      "ticker": "GOOGL",
+      "theme": "Cloud & AI Infrastructure",
+      "error": false,
+      "return": 0.013007845539125595,
+      "trend_5d": 0.044287432351172384,
+      "high": 349.5,
+      "low": 343.8857,
+      "volume": 19238357.195875,
+      "rank": 29
+    },
+    {
+      "ticker": "CGNX",
+      "theme": "Robotics & Industrial Automation",
+      "error": false,
+      "return": 0.012479201331114798,
+      "trend_5d": -0.013616469443994084,
+      "high": 62.01,
+      "low": 60.565,
+      "volume": 1047808.295727,
+      "rank": 30
+    },
+    {
+      "ticker": "PLTR",
+      "theme": "Enterprise AI Software",
+      "error": false,
+      "return": 0.01089824480899404,
+      "trend_5d": 0.06258290124201138,
+      "high": 177.88,
+      "low": 172.607,
+      "volume": 23776138.038392,
+      "rank": 31
+    },
+    {
+      "ticker": "ANET",
+      "theme": "AI Networking & Data Center Infrastructure",
+      "error": false,
+      "return": 0.010073909081705024,
+      "trend_5d": 0.055770146568601575,
+      "high": 204.9133,
+      "low": 192.98,
+      "volume": 7167241.011924,
+      "rank": 32
+    },
+    {
+      "ticker": "EQIX",
+      "theme": "AI Networking & Data Center Infrastructure",
+      "error": false,
+      "return": 0.009624468587624113,
+      "trend_5d": 0.002080464148621397,
+      "high": 1033.99,
+      "low": 1021.215,
+      "volume": 370457.387487,
+      "rank": 33
+    },
+    {
+      "ticker": "VRT",
+      "theme": "AI Networking & Data Center Infrastructure",
+      "error": false,
+      "return": 0.008688024727455002,
+      "trend_5d": -0.02676016604199405,
+      "high": 252.34,
+      "low": 241.25,
+      "volume": 4966904.791922,
+      "rank": 34
+    },
+    {
+      "ticker": "ADBE",
+      "theme": "Enterprise AI Software",
+      "error": false,
+      "return": 0.008662674650698587,
+      "trend_5d": 0.01543222280271661,
+      "high": 252.84,
+      "low": 245.401,
+      "volume": 5116532.810528,
+      "rank": 35
+    },
+    {
+      "ticker": "APTV",
+      "theme": "Autonomous Vehicles & Mobility AI",
+      "error": false,
+      "return": 0.006460544531610379,
+      "trend_5d": -0.045305318450426846,
+      "high": 44.23,
+      "low": 43.32,
+      "volume": 4333663.365527,
+      "rank": 36
+    },
+    {
+      "ticker": "FTNT",
+      "theme": "Cybersecurity AI",
+      "error": false,
+      "return": 0.0047156080805728084,
+      "trend_5d": 0.08643374252439417,
+      "high": 176.1,
+      "low": 167.77,
+      "volume": 5476611.043399,
+      "rank": 37
+    },
+    {
+      "ticker": "ISRG",
+      "theme": "Robotics & Industrial Automation",
+      "error": false,
+      "return": 0.003269769023516167,
+      "trend_5d": 0.06402929589968376,
+      "high": 388.2,
+      "low": 378.2801,
+      "volume": 2394063.773703,
+      "rank": 38
+    },
+    {
+      "ticker": "IBM",
+      "theme": "Cloud & AI Infrastructure",
+      "error": false,
+      "return": 0.0010947829382288443,
+      "trend_5d": 0.015938808648833458,
+      "high": 243.365,
+      "low": 237.35,
+      "volume": 5905871.315253,
+      "rank": 39
+    },
+    {
+      "ticker": "S",
+      "theme": "Cybersecurity AI",
+      "error": false,
+      "return": 0.0008631851532152623,
+      "trend_5d": 0.17062089853609308,
+      "high": 24.255,
+      "low": 22.5881,
+      "volume": 14582674.284614,
+      "rank": 40
+    },
+    {
+      "ticker": "UBER",
+      "theme": "Autonomous Vehicles & Mobility AI",
+      "error": false,
+      "return": -0.0014090460758066081,
+      "trend_5d": -0.023291069459757452,
+      "high": 71.641,
+      "low": 70.24,
+      "volume": 19808394.590726,
+      "rank": 41
+    },
+    {
+      "ticker": "PANW",
+      "theme": "Cybersecurity AI",
+      "error": false,
+      "return": -0.0015706109410354996,
+      "trend_5d": 0.10803864220508719,
+      "high": 383.12,
+      "low": 360.66,
+      "volume": 6294771.988193,
+      "rank": 42
+    },
+    {
+      "ticker": "VEEV",
+      "theme": "Healthcare AI",
+      "error": false,
+      "return": -0.004341260853152007,
+      "trend_5d": 0.01061384014100697,
+      "high": 266.71,
+      "low": 260.45,
+      "volume": 1120869.765936,
+      "rank": 43
+    },
+    {
+      "ticker": "NOW",
+      "theme": "Enterprise AI Software",
+      "error": false,
+      "return": -0.009655271062794957,
+      "trend_5d": 0.055652969428985344,
+      "high": 140.5369,
+      "low": 136,
+      "volume": 9857075.181776,
+      "rank": 44
+    },
+    {
+      "ticker": "ROK",
+      "theme": "Robotics & Industrial Automation",
+      "error": false,
+      "return": -0.011737202352260723,
+      "trend_5d": -0.026864750694164274,
+      "high": 424.24,
+      "low": 406.92,
+      "volume": 990556.980952,
+      "rank": 45
+    },
+    {
+      "ticker": "NFLX",
+      "theme": "Consumer Internet & AI Platforms",
+      "error": false,
+      "return": -0.014396021463159214,
+      "trend_5d": -0.009209314563873194,
+      "high": 76.96,
+      "low": 75.3,
+      "volume": 28167578.265305,
+      "rank": 46
+    },
+    {
+      "ticker": "TTD",
+      "theme": "Consumer Internet & AI Platforms",
+      "error": false,
+      "return": -0.015873015873015928,
+      "trend_5d": 0.020758768790264837,
+      "high": 14.865,
+      "low": 14.215,
+      "volume": 18371788.401279,
+      "rank": 47
+    },
+    {
+      "ticker": "PINS",
+      "theme": "Consumer Internet & AI Platforms",
+      "error": false,
+      "return": -0.018230563002681,
+      "trend_5d": -0.0250266240681577,
+      "high": 18.81,
+      "low": 18.2,
+      "volume": 29471591.300165,
+      "rank": 48
+    },
+    {
+      "ticker": "CRM",
+      "theme": "Enterprise AI Software",
+      "error": false,
+      "return": -0.030693701604534218,
+      "trend_5d": -0.0006172839506173311,
+      "high": 247,
+      "low": 241.52,
+      "volume": 16611316.288165,
+      "rank": 49
+    },
+    {
+      "ticker": "SPOT",
+      "theme": "Consumer Internet & AI Platforms",
+      "error": false,
+      "return": -0.03395867964853938,
+      "trend_5d": 0.013627738485423535,
+      "high": 553.77,
+      "low": 528.71,
+      "volume": 1284098.485115,
+      "rank": 50
+    }
+  ],
+  "missing_data": []
+}

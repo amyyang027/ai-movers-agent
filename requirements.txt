@@ -2,3 +2,4 @@ requests
 python-dotenv
 pyyaml
 openai
+matplotlib
