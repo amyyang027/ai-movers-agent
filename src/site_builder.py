@@ -110,7 +110,7 @@ def _render_day_page(snapshot: dict):
     movers_labels = [s["ticker"] for s in top_stocks] + [s["ticker"] for s in reversed(bottom_stocks)]
     movers_data = [round(s["return"] * 100, 2) for s in top_stocks] + [round(s["return"] * 100, 2) for s in reversed(bottom_stocks)]
 
-    narrative_html = md.markdown(snapshot.get("narrative_markdown", ""))
+    narrative_html = md.markdown(snapshot.get("narrative_markdown", ""), extensions=["tables"])
 
     breadth = snapshot["breadth"]
     benchmark = snapshot["benchmark"]
