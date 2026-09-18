@@ -1,0 +1,39 @@
+name: Daily AI Movers Agent
+
+on:
+  schedule:
+    # 21:30 UTC, Mon-Fri = after 4pm US market close year-round (4:30pm EST / 5:30pm EDT).
+    # GitHub cron only understands UTC, so this doesn't shift with daylight saving.
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch: {} # lets you trigger a run by hand from the Actions tab, for testing
+
+permissions:
+  contents: write # needed to commit the day's report back to the repo
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the agent
+        working-directory: src
+        env:
+          MASSIVE_API_KEY: ${{ secrets.MASSIVE_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python main.py
+
+      - name: Commit and push today's report, if any
+        run: |
+          git config user.name "ai-movers-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add reports/
+          git diff --cached --quiet || git commit -m "Daily report: $(date -u +%F)"
+          git push

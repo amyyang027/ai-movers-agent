@@ -7,10 +7,12 @@ import os
 import yaml
 
 from compute_returns import get_ticker_return, get_theme_return
+from fetch_prices import get_close_near
 from rank import top_bottom
 from report import generate_report
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MARKET_REFERENCE_TICKER = "SPY"
 
 
 def load_universe():
@@ -29,6 +31,14 @@ def all_tickers(universe):
 
 
 def run(as_of: dt.date):
+    # Weekends/holidays have no close for today - skip cleanly instead of silently
+    # reporting yesterday's data as if it were today's (would break re-run consistency
+    # and produce duplicate-looking reports).
+    market_date, _ = get_close_near(MARKET_REFERENCE_TICKER, as_of, max_lookback_days=0)
+    if market_date != as_of:
+        print(f"{as_of.isoformat()} was not a trading day (no data yet, or market closed). Skipping.")
+        return
+
     universe = load_universe()
     tickers = all_tickers(universe)
 
