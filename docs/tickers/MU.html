@@ -19,9 +19,9 @@
 <div class="card">
 <h2>At a Glance</h2>
 <div class="stat-row">
-<div class="stat"><div class="value ">$977.50</div><div class="label">Latest Close</div></div>
-<div class="stat"><div class="value up">+5.50%</div><div class="label">Latest Return</div></div>
-<div class="stat"><div class="value ">#4 of tracked stocks</div><div class="label">Latest Rank</div></div>
+<div class="stat"><div class="value ">$1015.80</div><div class="label">Latest Close</div></div>
+<div class="stat"><div class="value up">+3.92%</div><div class="label">Latest Return</div></div>
+<div class="stat"><div class="value ">#2 of tracked stocks</div><div class="label">Latest Rank</div></div>
 <div class="stat"><div class="value ">AI Chips & Semiconductors</div><div class="label">Theme</div></div>
 </div>
 </div>
@@ -29,13 +29,14 @@
 <div class="card">
 <h2>Price History</h2>
 <canvas id="priceChart"></canvas>
-<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 2 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
+<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 3 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
 </div>
 
 <div class="card">
 <h2>Daily Log</h2>
 <table>
 <tr><th>Date</th><th class="num">Close</th><th class="num">Return</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td>2026-09-18</td><td class="num">$1015.80</td><td class="num up">+3.92%</td><td class="num">35,723,370</td><td class="num">#2</td></tr>
 <tr><td>2026-09-17</td><td class="num">$977.50</td><td class="num up">+5.50%</td><td class="num">22,091,591</td><td class="num">#4</td></tr>
 <tr><td>2026-09-16</td><td class="num">$926.55</td><td class="num down">-0.11%</td><td class="num">20,213,011</td><td class="num">#22</td></tr>
 </table>
@@ -45,10 +46,10 @@
 new Chart(document.getElementById('priceChart'), {
   type: 'line',
   data: {
-    labels: ["2026-09-16", "2026-09-17"],
+    labels: ["2026-09-16", "2026-09-17", "2026-09-18"],
     datasets: [{
       label: 'MU close ($)',
-      data: [926.55, 977.5],
+      data: [926.55, 977.5, 1015.8],
       borderColor: '#2f5fd6',
       backgroundColor: 'rgba(47,95,214,0.1)',
       tension: 0.2,

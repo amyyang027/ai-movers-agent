@@ -19,8 +19,8 @@
 <div class="card">
 <h2>At a Glance</h2>
 <div class="stat-row">
-<div class="stat"><div class="value ">$23.19</div><div class="label">Latest Close</div></div>
-<div class="stat"><div class="value up">+0.09%</div><div class="label">Latest Return</div></div>
+<div class="stat"><div class="value ">$22.51</div><div class="label">Latest Close</div></div>
+<div class="stat"><div class="value down">-2.93%</div><div class="label">Latest Return</div></div>
 <div class="stat"><div class="value ">#40 of tracked stocks</div><div class="label">Latest Rank</div></div>
 <div class="stat"><div class="value ">Cybersecurity AI</div><div class="label">Theme</div></div>
 </div>
@@ -29,13 +29,14 @@
 <div class="card">
 <h2>Price History</h2>
 <canvas id="priceChart"></canvas>
-<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 2 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
+<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 3 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
 </div>
 
 <div class="card">
 <h2>Daily Log</h2>
 <table>
 <tr><th>Date</th><th class="num">Close</th><th class="num">Return</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td>2026-09-18</td><td class="num">$22.51</td><td class="num down">-2.93%</td><td class="num">13,016,627</td><td class="num">#40</td></tr>
 <tr><td>2026-09-17</td><td class="num">$23.19</td><td class="num up">+0.09%</td><td class="num">14,582,674</td><td class="num">#40</td></tr>
 <tr><td>2026-09-16</td><td class="num">$23.17</td><td class="num down">-1.32%</td><td class="num">8,360,192</td><td class="num">#38</td></tr>
 </table>
@@ -45,10 +46,10 @@
 new Chart(document.getElementById('priceChart'), {
   type: 'line',
   data: {
-    labels: ["2026-09-16", "2026-09-17"],
+    labels: ["2026-09-16", "2026-09-17", "2026-09-18"],
     datasets: [{
       label: 'S close ($)',
-      data: [23.17, 23.19],
+      data: [23.17, 23.19, 22.51],
       borderColor: '#2f5fd6',
       backgroundColor: 'rgba(47,95,214,0.1)',
       tension: 0.2,
