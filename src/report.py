@@ -4,7 +4,12 @@ It is not allowed to invent numbers, or to recommend trades / predict the future
 import json
 import os
 
-import anthropic
+from openai import OpenAI
+
+# Google's free Gemini tier, accessed through its OpenAI-compatible endpoint so we
+# can use the standard `openai` client instead of a Google-specific SDK.
+GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
+GEMINI_MODEL = "gemini-3.6-flash"  # if this 404s, check https://ai.google.dev/gemini-api/docs/models for the current free-tier flash model name
 
 SYSTEM_PROMPT = """You write a short, factual daily markets recap for AI-related stocks and themes.
 
@@ -18,27 +23,38 @@ Rules you must follow exactly:
 """
 
 
+def _as_percent(items: list):
+    """Copy each item with its raw 0.0211 return replaced by a readable '+2.11%' string."""
+    out = []
+    for item in items:
+        item = dict(item)
+        item["return"] = f"{item['return'] * 100:+.2f}%"
+        out.append(item)
+    return out
+
+
 def generate_report(as_of: str, top_themes, bottom_themes, top_stocks, bottom_stocks, missing: list):
     payload = {
         "date": as_of,
-        "top_themes": top_themes,
-        "bottom_themes": bottom_themes,
-        "top_stocks": top_stocks,
-        "bottom_stocks": bottom_stocks,
+        "top_themes": _as_percent(top_themes),
+        "bottom_themes": _as_percent(bottom_themes),
+        "top_stocks": _as_percent(top_stocks),
+        "bottom_stocks": _as_percent(bottom_stocks),
         "missing_data": missing,
     }
 
-    client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
-    message = client.messages.create(
-        model="claude-sonnet-5",
-        max_tokens=1024,
-        system=SYSTEM_PROMPT,
-        messages=[{
-            "role": "user",
-            "content": (
-                "Write today's AI Movers report as Markdown, using this data verbatim:\n\n"
-                + json.dumps(payload, indent=2)
-            ),
-        }],
+    client = OpenAI(api_key=os.environ["GEMINI_API_KEY"], base_url=GEMINI_BASE_URL)
+    response = client.chat.completions.create(
+        model=GEMINI_MODEL,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {
+                "role": "user",
+                "content": (
+                    "Write today's AI Movers report as Markdown, using this data verbatim:\n\n"
+                    + json.dumps(payload, indent=2)
+                ),
+            },
+        ],
     )
-    return message.content[0].text
+    return response.choices[0].message.content
