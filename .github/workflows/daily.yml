@@ -24,6 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run the agent
+        id: run_agent
         working-directory: src
         env:
           MASSIVE_API_KEY: ${{ secrets.MASSIVE_API_KEY }}
@@ -42,3 +43,20 @@ jobs:
           git add reports/
           git commit -m "Daily report: $(date -u +%F)"
           git push
+
+      - name: Email run result
+        if: always() # send on success AND failure, not just failure
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ladykena2000@gmail.com
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          from: AI Movers Agent
+          to: ladykena2000@gmail.com
+          subject: "AI Movers Agent - ${{ steps.run_agent.outcome == 'success' && 'success' || 'FAILED' }} - ${{ github.run_id }}"
+          body: |
+            Run outcome: ${{ steps.run_agent.outcome == 'success' && 'success' || 'FAILED' }}
+
+            View full logs and any generated report here:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
