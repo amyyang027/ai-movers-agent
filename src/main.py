@@ -11,6 +11,7 @@ from chart import make_movers_chart
 from compute_returns import get_ticker_return, get_theme_return
 from rank import market_breadth, rank_all, top_bottom
 from report import generate_report
+from site_builder import build_site
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPORTS_DIR = os.path.join(ROOT, "reports")
@@ -57,7 +58,7 @@ def run(as_of: dt.date):
         r = ticker_returns[s["ticker"]]
         item = {"ticker": s["ticker"], "theme": s["theme"], "error": r["error"]}
         if not r["error"]:
-            item.update({k: r[k] for k in ("return", "trend_5d", "high", "low", "volume")})
+            item.update({k: r[k] for k in ("return", "trend_5d", "high", "low", "volume", "close")})
         stock_items.append(item)
 
     missing = sorted(t for t, r in ticker_returns.items() if r["error"])
@@ -83,15 +84,16 @@ def run(as_of: dt.date):
     make_movers_chart(top_stocks, bottom_stocks, as_of.isoformat(), os.path.join(REPORTS_DIR, chart_filename))
 
     # Step 7: LLM writes the words, using only the numbers above
-    report_text = generate_report(
+    narrative_markdown = generate_report(
         as_of.isoformat(), top_themes, bottom_themes, top_stocks, bottom_stocks,
         missing, breadth, benchmark,
     )
-    report_text += f"\n\n![Top and bottom AI stock movers]({chart_filename})\n"
+    report_text = narrative_markdown + f"\n\n![Top and bottom AI stock movers]({chart_filename})\n"
 
     # Step 8: save the day's Markdown report, the chart, and the raw JSON snapshot
-    # (the JSON is what tomorrow's run reads back for rank-change context - it holds
-    # every tracked theme/stock, not just the top/bottom slice shown in the Markdown).
+    # (the JSON is what tomorrow's run reads back for rank-change context, and what
+    # the HTML site is rebuilt from - it holds every tracked theme/stock and the raw
+    # narrative text, not just the top/bottom slice shown in the Markdown).
     md_path = os.path.join(REPORTS_DIR, f"{as_of.isoformat()}.md")
     with open(md_path, "w") as f:
         f.write(report_text)
@@ -103,11 +105,14 @@ def run(as_of: dt.date):
         "themes": ranked_themes,
         "stocks": ranked_stocks,
         "missing_data": missing,
+        "narrative_markdown": narrative_markdown,
     }, REPORTS_DIR)
 
     print(f"Wrote {md_path}")
     if missing:
         print(f"Missing data for: {', '.join(missing)}")
+
+    build_site()
 
 
 if __name__ == "__main__":

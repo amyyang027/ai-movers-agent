@@ -92,6 +92,7 @@
       "high": 81.28,
       "low": 72.61,
       "volume": 17128001.433026,
+      "close": 80.36,
       "rank": 1
     },
     {
@@ -103,6 +104,7 @@
       "high": 551.42,
       "low": 527.6,
       "volume": 28471628.347686,
+      "close": 545.09,
       "rank": 2
     },
     {
@@ -114,6 +116,7 @@
       "high": 201,
       "low": 183.605,
       "volume": 4253215.600384,
+      "close": 199.28,
       "rank": 3
     },
     {
@@ -125,6 +128,7 @@
       "high": 986.2,
       "low": 953.5,
       "volume": 22091590.922743,
+      "close": 977.5,
       "rank": 4
     },
     {
@@ -136,6 +140,7 @@
       "high": 152,
       "low": 146.15,
       "volume": 27742415.798516,
+      "close": 150.59,
       "rank": 5
     },
     {
@@ -147,6 +152,7 @@
       "high": 89.73,
       "low": 83.81,
       "volume": 1997770.136207,
+      "close": 88.97,
       "rank": 6
     },
     {
@@ -158,6 +164,7 @@
       "high": 403,
       "low": 372,
       "volume": 1546004.600781,
+      "close": 393.42,
       "rank": 7
     },
     {
@@ -169,6 +176,7 @@
       "high": 593.9799,
       "low": 565.5,
       "volume": 9350698.081082,
+      "close": 588.4,
       "rank": 8
     },
     {
@@ -180,6 +188,7 @@
       "high": 360.26,
       "low": 350,
       "volume": 2598552.379899,
+      "close": 353.13,
       "rank": 9
     },
     {
@@ -191,6 +200,7 @@
       "high": 45.55,
       "low": 43.918,
       "volume": 2365687.203351,
+      "close": 44.61,
       "rank": 10
     },
     {
@@ -202,6 +212,7 @@
       "high": 198.93,
       "low": 188.661,
       "volume": 3019129.138544,
+      "close": 197.47,
       "rank": 11
     },
     {
@@ -213,6 +224,7 @@
       "high": 430.53,
       "low": 423.39,
       "volume": 12447742.56025,
+      "close": 430.26,
       "rank": 12
     },
     {
@@ -224,6 +236,7 @@
       "high": 8.295,
       "low": 7.905,
       "volume": 9378879.624067,
+      "close": 8.04,
       "rank": 13
     },
     {
@@ -235,6 +248,7 @@
       "high": 87.86,
       "low": 86.15,
       "volume": 8832825.814194,
+      "close": 86.62,
       "rank": 14
     },
     {
@@ -246,6 +260,7 @@
       "high": 219.905,
       "low": 217.145,
       "volume": 94191346.866285,
+      "close": 219.34,
       "rank": 15
     },
     {
@@ -257,6 +272,7 @@
       "high": 26.605,
       "low": 25.555,
       "volume": 2171310.34994,
+      "close": 26.57,
       "rank": 16
     },
     {
@@ -268,6 +284,7 @@
       "high": 111.44,
       "low": 109.32,
       "volume": 16158853.17277,
+      "close": 110.24,
       "rank": 17
     },
     {
@@ -279,6 +296,7 @@
       "high": 350.94,
       "low": 345.31,
       "volume": 24817567.17323,
+      "close": 347.3,
       "rank": 18
     },
     {
@@ -290,6 +308,7 @@
       "high": 374.12,
       "low": 363.22,
       "volume": 38924257.201049,
+      "close": 366.2,
       "rank": 19
     },
     {
@@ -301,6 +320,7 @@
       "high": 239.045,
       "low": 227.365,
       "volume": 2804706.011247,
+      "close": 236,
       "rank": 20
     },
     {
@@ -312,6 +332,7 @@
       "high": 344.66,
       "low": 328.774,
       "volume": 4294080.40301,
+      "close": 338.39,
       "rank": 21
     },
     {
@@ -323,6 +344,7 @@
       "high": 252.73,
       "low": 249.24,
       "volume": 30447448.766232,
+      "close": 251.19,
       "rank": 22
     },
     {
@@ -334,6 +356,7 @@
       "high": 191.91,
       "low": 187.7601,
       "volume": 12327858.308136,
+      "close": 188.71,
       "rank": 23
     },
     {
@@ -345,6 +368,7 @@
       "high": 10.9,
       "low": 10.5,
       "volume": 2936674.303133,
+      "close": 10.78,
       "rank": 24
     },
     {
@@ -356,6 +380,7 @@
       "high": 250.32,
       "low": 233.19,
       "volume": 12340938.736,
+      "close": 245.7,
       "rank": 25
     },
     {
@@ -367,6 +392,7 @@
       "high": 501.47,
       "low": 493.17,
       "volume": 17889521.319454,
+      "close": 497.75,
       "rank": 26
     },
     {
@@ -378,6 +404,7 @@
       "high": 65.255,
       "low": 62.995,
       "volume": 4512608.257678,
+      "close": 64.445,
       "rank": 27
     },
     {
@@ -389,6 +416,7 @@
       "high": 683.2,
       "low": 667.05,
       "volume": 15927994.339433,
+      "close": 682.31,
       "rank": 28
     },
     {
@@ -400,6 +428,7 @@
       "high": 349.5,
       "low": 343.8857,
       "volume": 19238357.195875,
+      "close": 347.33,
       "rank": 29
     },
     {
@@ -411,6 +440,7 @@
       "high": 62.01,
       "low": 60.565,
       "volume": 1047808.295727,
+      "close": 60.85,
       "rank": 30
     },
     {
@@ -422,6 +452,7 @@
       "high": 177.88,
       "low": 172.607,
       "volume": 23776138.038392,
+      "close": 176.24,
       "rank": 31
     },
     {
@@ -433,6 +464,7 @@
       "high": 204.9133,
       "low": 192.98,
       "volume": 7167241.011924,
+      "close": 199.53,
       "rank": 32
     },
     {
@@ -444,6 +476,7 @@
       "high": 1033.99,
       "low": 1021.215,
       "volume": 370457.387487,
+      "close": 1025.94,
       "rank": 33
     },
     {
@@ -455,6 +488,7 @@
       "high": 252.34,
       "low": 241.25,
       "volume": 4966904.791922,
+      "close": 241.49,
       "rank": 34
     },
     {
@@ -466,6 +500,7 @@
       "high": 252.84,
       "low": 245.401,
       "volume": 5116532.810528,
+      "close": 252.67,
       "rank": 35
     },
     {
@@ -477,6 +512,7 @@
       "high": 44.23,
       "low": 43.32,
       "volume": 4333663.365527,
+      "close": 43.62,
       "rank": 36
     },
     {
@@ -488,6 +524,7 @@
       "high": 176.1,
       "low": 167.77,
       "volume": 5476611.043399,
+      "close": 172.58,
       "rank": 37
     },
     {
@@ -499,6 +536,7 @@
       "high": 388.2,
       "low": 378.2801,
       "volume": 2394063.773703,
+      "close": 383.54,
       "rank": 38
     },
     {
@@ -510,6 +548,7 @@
       "high": 243.365,
       "low": 237.35,
       "volume": 5905871.315253,
+      "close": 237.75,
       "rank": 39
     },
     {
@@ -521,6 +560,7 @@
       "high": 24.255,
       "low": 22.5881,
       "volume": 14582674.284614,
+      "close": 23.19,
       "rank": 40
     },
     {
@@ -532,6 +572,7 @@
       "high": 71.641,
       "low": 70.24,
       "volume": 19808394.590726,
+      "close": 70.87,
       "rank": 41
     },
     {
@@ -543,6 +584,7 @@
       "high": 383.12,
       "low": 360.66,
       "volume": 6294771.988193,
+      "close": 375.06,
       "rank": 42
     },
     {
@@ -554,6 +596,7 @@
       "high": 266.71,
       "low": 260.45,
       "volume": 1120869.765936,
+      "close": 263.75,
       "rank": 43
     },
     {
@@ -565,6 +608,7 @@
       "high": 140.5369,
       "low": 136,
       "volume": 9857075.181776,
+      "close": 138.47,
       "rank": 44
     },
     {
@@ -576,6 +620,7 @@
       "high": 424.24,
       "low": 406.92,
       "volume": 990556.980952,
+      "close": 410.05,
       "rank": 45
     },
     {
@@ -587,6 +632,7 @@
       "high": 76.96,
       "low": 75.3,
       "volume": 28167578.265305,
+      "close": 75.31,
       "rank": 46
     },
     {
@@ -598,6 +644,7 @@
       "high": 14.865,
       "low": 14.215,
       "volume": 18371788.401279,
+      "close": 14.26,
       "rank": 47
     },
     {
@@ -609,6 +656,7 @@
       "high": 18.81,
       "low": 18.2,
       "volume": 29471591.300165,
+      "close": 18.31,
       "rank": 48
     },
     {
@@ -620,6 +668,7 @@
       "high": 247,
       "low": 241.52,
       "volume": 16611316.288165,
+      "close": 242.85,
       "rank": 49
     },
     {
@@ -631,8 +680,10 @@
       "high": 553.77,
       "low": 528.71,
       "volume": 1284098.485115,
+      "close": 528.84,
       "rank": 50
     }
   ],
-  "missing_data": []
+  "missing_data": [],
+  "narrative_markdown": "# Daily AI Markets Recap: September 17, 2026\n\nOn September 17, 2026, market breadth for tracked AI stocks showed 40 advancing, 10 declining, and 0 flat out of 50 total stocks. By comparison, the S&P 500 (SPY) returned +1.13%.\n\n---\n\n## Top AI Themes\n\n1. **Healthcare AI**\n   * **Return:** +4.59% | **5-Day Trend:** +11.43%\n   * **Rank:** 1 (moved from rank 4)\n2. **AI Chips & Semiconductors**\n   * **Return:** +3.63% | **5-Day Trend:** +2.03%\n   * **Rank:** 2 (moved from rank 3)\n3. **AI Data & Analytics**\n   * **Return:** +3.15% | **5-Day Trend:** +4.77%\n   * **Rank:** 3 (moved from rank 5)\n4. **Cloud & AI Infrastructure**\n   * **Return:** +2.05% | **5-Day Trend:** +1.06%\n   * **Rank:** 4 (moved from rank 8)\n5. **AI Networking & Data Center Infrastructure**\n   * **Return:** +1.92% | **5-Day Trend:** +4.37%\n   * **Rank:** 5 (moved from rank 1)\n\n---\n\n## Bottom AI Themes\n\n1. **Consumer Internet & AI Platforms**\n   * **Return:** -1.38% | **5-Day Trend:** +1.18%\n   * **Rank:** 10 (remained at rank 10)\n2. **Enterprise AI Software**\n   * **Return:** +0.81% | **5-Day Trend:** +4.19%\n   * **Rank:** 9 (remained at rank 9)\n3. **Cybersecurity AI**\n   * **Return:** +1.05% | **5-Day Trend:** +14.99%\n   * **Rank:** 8 (moved from rank 6)\n4. **Robotics & Industrial Automation**\n   * **Return:** +1.48% | **5-Day Trend:** +1.26%\n   * **Rank:** 7 (moved from rank 2)\n5. **Autonomous Vehicles & Mobility AI**\n   * **Return:** +1.67% | **5-Day Trend:** -1.52%\n   * **Rank:** 6 (moved from rank 7)\n\n---\n\n## Top Performing AI Stocks\n\n1. **TEM** (Healthcare AI)\n   * **Close:** 80.36 (+14.85%) | **5-Day Trend:** +36.81%\n   * **Day Range:** $72.61 \u2013 $81.28 | **Volume:** 17,128,001\n   * **Rank:** 1 (moved from rank 8)\n2. **AMD** (AI Chips & Semiconductors)\n   * **Close:** 545.09 (+6.36%) | **5-Day Trend:** +8.24%\n   * **Day Range:** $527.60 \u2013 $551.42 | **Volume:** 28,471,628\n   * **Rank:** 2 (moved from rank 7)\n3. **WDAY** (Enterprise AI Software)\n   * **Close:** 199.28 (+6.14%) | **5-Day Trend:** +7.67%\n   * **Day Range:** $183.60 \u2013 $201.00 | **Volume:** 4,253,216\n   * **Rank:** 3 (moved from rank 41)\n4. **MU** (AI Chips & Semiconductors)\n   * **Close:** 977.5 (+5.50%) | **5-Day Trend:** +0.01%\n   * **Day Range:** $953.50 \u2013 $986.20 | **Volume:** 22,091,591\n   * **Rank:** 4 (moved from rank 22)\n5. **ORCL** (Cloud & AI Infrastructure)\n   * **Close:** 150.59 (+5.19%) | **5-Day Trend:** -1.54%\n   * **Day Range:** $146.15 \u2013 $152.00 | **Volume:** 27,742,416\n   * **Rank:** 5 (moved from rank 6)\n6. **ESTC** (AI Data & Analytics)\n   * **Close:** 88.97 (+4.63%) | **5-Day Trend:** +6.58%\n   * **Day Range:** $83.81 \u2013 $89.73 | **Volume:** 1,997,770\n   * **Rank:** 6 (moved from rank 23)\n7. **MDB** (AI Data & Analytics)\n   * **Close:** 393.42 (+4.54%) | **5-Day Trend:** +5.23%\n   * **Day Range:** $372.00 \u2013 $403.00 | **Volume:** 1,546,005\n   * **Rank:** 7 (moved from rank 25)\n8. **DELL** (AI Networking & Data Center Infrastructure)\n   * **Close:** 588.4 (+4.46%) | **5-Day Trend:** +16.14%\n   * **Day Range:** $565.50 \u2013 $593.98 | **Volume:** 9,350,698\n   * **Rank:** 8 (moved from rank 1)\n9. **TER** (Robotics & Industrial Automation)\n   * **Close:** 353.13 (+3.51%) | **5-Day Trend:** -4.61%\n   * **Day Range:** $350.00 \u2013 $360.26 | **Volume:** 2,598,552\n   * **Rank:** 9 (moved from rank 2)\n10. **SYM** (Robotics & Industrial Automation)\n    * **Close:** 44.61 (+3.48%) | **5-Day Trend:** +8.54%\n    * **Day Range:** $43.92 \u2013 $45.55 | **Volume:** 2,365,687\n    * **Rank:** 10 (moved from rank 15)\n\n---\n\n## Bottom Performing AI Stocks\n\n1. **SPOT** (Consumer Internet & AI Platforms)\n   * **Close:** 528.84 (-3.40%) | **5-Day Trend:** +1.36%\n   * **Day Range:** $528.71 \u2013 $553.77 | **Volume:** 1,284,098\n   * **Rank:** 50 (moved from rank 44)\n2. **CRM** (Enterprise AI Software)\n   * **Close:** 242.85 (-3.07%) | **5-Day Trend:** -0.06%\n   * **Day Range:** $241.52 \u2013 $247.00 | **Volume:** 16,611,316\n   * **Rank:** 49 (moved from rank 45)\n3. **PINS** (Consumer Internet & AI Platforms)\n   * **Close:** 18.31 (-1.82%) | **5-Day Trend:** -2.50%\n   * **Day Range:** $18.20 \u2013 $18.81 | **Volume:** 29,471,591\n   * **Rank:** 48 (moved from rank 28)\n4. **TTD** (Consumer Internet & AI Platforms)\n   * **Close:** 14.26 (-1.59%) | **5-Day Trend:** +2.08%\n   * **Day Range:** $14.21 \u2013 $14.87 | **Volume:** 18,371,788\n   * **Rank:** 47 (moved from rank 49)\n5. **NFLX** (Consumer Internet & AI Platforms)\n   * **Close:** 75.31 (-1.44%) | **5-Day Trend:** -0.92%\n   * **Day Range:** $75.30 \u2013 $76.96 | **Volume:** 28,167,578\n   * **Rank:** 46 (moved from rank 43)\n6. **ROK** (Robotics & Industrial Automation)\n   * **Close:** 410.05 (-1.17%) | **5-Day Trend:** -2.69%\n   * **Day Range:** $406.92 \u2013 $424.24 | **Volume:** 990,557\n   * **Rank:** 45 (moved from rank 27)\n7. **NOW** (Enterprise AI Software)\n   * **Close:** 138.47 (-0.97%) | **5-Day Trend:** +5.57%\n   * **Day Range:** $136.00 \u2013 $140.54 | **Volume:** 9,857,075\n   * **Rank:** 44 (moved from rank 40)\n8. **VEEV** (Healthcare AI)\n   * **Close:** 263.75 (-0.43%) | **5-Day Trend:** +1.06%\n   * **Day Range:** $260.45 \u2013 $266.71 | **Volume:** 1,120,870\n   * **Rank:** 43 (moved from rank 31)\n9. **PANW** (Cybersecurity AI)\n   * **Close:** 375.06 (-0.16%) | **5-Day Trend:** +10.80%\n   * **Day Range:** $360.66 \u2013 $383.12 | **Volume:** 6,294,772\n   * **Rank:** 42 (moved from rank 20)\n10. **UBER** (Autonomous Vehicles & Mobility AI)\n    * **Close:** 70.87 (-0.14%) | **5-Day Trend:** -2.33%\n    * **Day Range:** $70.24 \u2013 $71.64 | **Volume:** 19,808,395\n    * **Rank:** 41 (moved from rank 30)"
 }

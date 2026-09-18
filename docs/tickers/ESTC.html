@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ESTC - AI Movers</title>
+<link rel="stylesheet" href="../style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+<div class="page">
+<nav class="crumbs"><a href="../index.html">Home</a> / ESTC</nav>
+
+<header class="masthead">
+<h1>ESTC</h1>
+<div class="sub">AI Data & Analytics - AI-powered search and analytics engine.</div>
+</header>
+
+<div class="card">
+<h2>At a Glance</h2>
+<div class="stat-row">
+<div class="stat"><div class="value ">$88.97</div><div class="label">Latest Close</div></div>
+<div class="stat"><div class="value up">+4.63%</div><div class="label">Latest Return</div></div>
+<div class="stat"><div class="value ">#6 of tracked stocks</div><div class="label">Latest Rank</div></div>
+<div class="stat"><div class="value ">AI Data & Analytics</div><div class="label">Theme</div></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Price History</h2>
+<canvas id="priceChart"></canvas>
+<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 2 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
+</div>
+
+<div class="card">
+<h2>Daily Log</h2>
+<table>
+<tr><th>Date</th><th class="num">Close</th><th class="num">Return</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td>2026-09-17</td><td class="num">$88.97</td><td class="num up">+4.63%</td><td class="num">1,997,770</td><td class="num">#6</td></tr>
+<tr><td>2026-09-16</td><td class="num">$85.03</td><td class="num down">-0.15%</td><td class="num">1,979,846</td><td class="num">#23</td></tr>
+</table>
+</div>
+
+<script>
+new Chart(document.getElementById('priceChart'), {
+  type: 'line',
+  data: {
+    labels: ["2026-09-16", "2026-09-17"],
+    datasets: [{
+      label: 'ESTC close ($)',
+      data: [85.03, 88.97],
+      borderColor: '#2f5fd6',
+      backgroundColor: 'rgba(47,95,214,0.1)',
+      tension: 0.2,
+      fill: true
+    }]
+  },
+  options: { plugins: { legend: { display: false } } }
+});
+</script>
+
+<footer>Daily AI Movers Agent - numbers sourced from Massive, report text generated from those numbers only.</footer>
+</div>
+</body>
+</html>

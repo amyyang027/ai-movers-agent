@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Movers - 2026-09-17</title>
+<link rel="stylesheet" href="../style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+<div class="page">
+<nav class="crumbs"><a href="../index.html">Home</a> / 2026-09-17</nav>
+
+<header class="masthead">
+<h1>AI Movers - 2026-09-17</h1>
+<div class="sub">Daily recap of 50 tracked AI-related stocks across 10 themes</div>
+</header>
+
+<div class="card">
+<h2>At a Glance</h2>
+<div class="stat-row">
+<div class="stat"><div class="value up">40</div><div class="label">Stocks Up</div></div>
+<div class="stat"><div class="value down">10</div><div class="label">Stocks Down</div></div>
+<div class="stat"><div class="value ">0</div><div class="label">Stocks Flat</div></div>
+<div class="stat"><div class="value up">+1.13%</div><div class="label">S&amp;P 500 (SPY)</div></div>
+</div>
+</div>
+
+<div class="charts">
+<div class="card"><h2>Volume by Theme</h2><canvas id="volChart"></canvas></div>
+<div class="card"><h2>Top / Bottom Movers</h2><canvas id="moversChart"></canvas></div>
+</div>
+
+<div class="card">
+<h2>Themes</h2>
+<table>
+<tr><th>Theme</th><th class="num">Return</th><th class="num">5d Trend</th><th class="num">Rank</th></tr>
+<tr><td>Healthcare AI</td><td class="num up">+4.59%</td><td class="num">+11.43%</td><td class="num">#1</td></tr>
+<tr><td>AI Chips & Semiconductors</td><td class="num up">+3.63%</td><td class="num">+2.03%</td><td class="num">#2</td></tr>
+<tr><td>AI Data & Analytics</td><td class="num up">+3.15%</td><td class="num">+4.77%</td><td class="num">#3</td></tr>
+<tr><td>Cloud & AI Infrastructure</td><td class="num up">+2.05%</td><td class="num">+1.06%</td><td class="num">#4</td></tr>
+<tr><td>AI Networking & Data Center Infrastructure</td><td class="num up">+1.92%</td><td class="num">+4.37%</td><td class="num">#5</td></tr>
+<tr><td>Consumer Internet & AI Platforms</td><td class="num down">-1.38%</td><td class="num">+1.18%</td><td class="num">#10</td></tr>
+<tr><td>Enterprise AI Software</td><td class="num up">+0.81%</td><td class="num">+4.19%</td><td class="num">#9</td></tr>
+<tr><td>Cybersecurity AI</td><td class="num up">+1.05%</td><td class="num">+14.99%</td><td class="num">#8</td></tr>
+<tr><td>Robotics & Industrial Automation</td><td class="num up">+1.48%</td><td class="num">+1.26%</td><td class="num">#7</td></tr>
+<tr><td>Autonomous Vehicles & Mobility AI</td><td class="num up">+1.67%</td><td class="num">-1.52%</td><td class="num">#6</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Top 10 Stocks</h2>
+<table>
+<tr><th>Ticker</th><th>Theme</th><th class="num">Return</th><th class="num">5d Trend</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td><a class="ticker" href="../tickers/TEM.html">TEM</a></td><td>Healthcare AI</td><td class="num up">+14.85%</td><td class="num">+36.81%</td><td class="num">17,128,001</td><td class="num">#1</td></tr>
+<tr><td><a class="ticker" href="../tickers/AMD.html">AMD</a></td><td>AI Chips & Semiconductors</td><td class="num up">+6.36%</td><td class="num">+8.24%</td><td class="num">28,471,628</td><td class="num">#2</td></tr>
+<tr><td><a class="ticker" href="../tickers/WDAY.html">WDAY</a></td><td>Enterprise AI Software</td><td class="num up">+6.14%</td><td class="num">+7.67%</td><td class="num">4,253,216</td><td class="num">#3</td></tr>
+<tr><td><a class="ticker" href="../tickers/MU.html">MU</a></td><td>AI Chips & Semiconductors</td><td class="num up">+5.50%</td><td class="num">+0.01%</td><td class="num">22,091,591</td><td class="num">#4</td></tr>
+<tr><td><a class="ticker" href="../tickers/ORCL.html">ORCL</a></td><td>Cloud & AI Infrastructure</td><td class="num up">+5.19%</td><td class="num">-1.54%</td><td class="num">27,742,416</td><td class="num">#5</td></tr>
+<tr><td><a class="ticker" href="../tickers/ESTC.html">ESTC</a></td><td>AI Data & Analytics</td><td class="num up">+4.63%</td><td class="num">+6.58%</td><td class="num">1,997,770</td><td class="num">#6</td></tr>
+<tr><td><a class="ticker" href="../tickers/MDB.html">MDB</a></td><td>AI Data & Analytics</td><td class="num up">+4.54%</td><td class="num">+5.23%</td><td class="num">1,546,005</td><td class="num">#7</td></tr>
+<tr><td><a class="ticker" href="../tickers/DELL.html">DELL</a></td><td>AI Networking & Data Center Infrastructure</td><td class="num up">+4.46%</td><td class="num">+16.14%</td><td class="num">9,350,698</td><td class="num">#8</td></tr>
+<tr><td><a class="ticker" href="../tickers/TER.html">TER</a></td><td>Robotics & Industrial Automation</td><td class="num up">+3.51%</td><td class="num">-4.61%</td><td class="num">2,598,552</td><td class="num">#9</td></tr>
+<tr><td><a class="ticker" href="../tickers/SYM.html">SYM</a></td><td>Robotics & Industrial Automation</td><td class="num up">+3.48%</td><td class="num">+8.54%</td><td class="num">2,365,687</td><td class="num">#10</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Bottom 10 Stocks</h2>
+<table>
+<tr><th>Ticker</th><th>Theme</th><th class="num">Return</th><th class="num">5d Trend</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td><a class="ticker" href="../tickers/SPOT.html">SPOT</a></td><td>Consumer Internet & AI Platforms</td><td class="num down">-3.40%</td><td class="num">+1.36%</td><td class="num">1,284,098</td><td class="num">#50</td></tr>
+<tr><td><a class="ticker" href="../tickers/CRM.html">CRM</a></td><td>Enterprise AI Software</td><td class="num down">-3.07%</td><td class="num">-0.06%</td><td class="num">16,611,316</td><td class="num">#49</td></tr>
+<tr><td><a class="ticker" href="../tickers/PINS.html">PINS</a></td><td>Consumer Internet & AI Platforms</td><td class="num down">-1.82%</td><td class="num">-2.50%</td><td class="num">29,471,591</td><td class="num">#48</td></tr>
+<tr><td><a class="ticker" href="../tickers/TTD.html">TTD</a></td><td>Consumer Internet & AI Platforms</td><td class="num down">-1.59%</td><td class="num">+2.08%</td><td class="num">18,371,788</td><td class="num">#47</td></tr>
+<tr><td><a class="ticker" href="../tickers/NFLX.html">NFLX</a></td><td>Consumer Internet & AI Platforms</td><td class="num down">-1.44%</td><td class="num">-0.92%</td><td class="num">28,167,578</td><td class="num">#46</td></tr>
+<tr><td><a class="ticker" href="../tickers/ROK.html">ROK</a></td><td>Robotics & Industrial Automation</td><td class="num down">-1.17%</td><td class="num">-2.69%</td><td class="num">990,557</td><td class="num">#45</td></tr>
+<tr><td><a class="ticker" href="../tickers/NOW.html">NOW</a></td><td>Enterprise AI Software</td><td class="num down">-0.97%</td><td class="num">+5.57%</td><td class="num">9,857,075</td><td class="num">#44</td></tr>
+<tr><td><a class="ticker" href="../tickers/VEEV.html">VEEV</a></td><td>Healthcare AI</td><td class="num down">-0.43%</td><td class="num">+1.06%</td><td class="num">1,120,870</td><td class="num">#43</td></tr>
+<tr><td><a class="ticker" href="../tickers/PANW.html">PANW</a></td><td>Cybersecurity AI</td><td class="num down">-0.16%</td><td class="num">+10.80%</td><td class="num">6,294,772</td><td class="num">#42</td></tr>
+<tr><td><a class="ticker" href="../tickers/UBER.html">UBER</a></td><td>Autonomous Vehicles & Mobility AI</td><td class="num down">-0.14%</td><td class="num">-2.33%</td><td class="num">19,808,395</td><td class="num">#41</td></tr>
+</table>
+</div>
+
+<div class="card narrative">
+<h2>Summary</h2>
+<h1>Daily AI Markets Recap: September 17, 2026</h1>
+<p>On September 17, 2026, market breadth for tracked AI stocks showed 40 advancing, 10 declining, and 0 flat out of 50 total stocks. By comparison, the S&amp;P 500 (SPY) returned +1.13%.</p>
+<hr />
+<h2>Top AI Themes</h2>
+<ol>
+<li><strong>Healthcare AI</strong></li>
+<li><strong>Return:</strong> +4.59% | <strong>5-Day Trend:</strong> +11.43%</li>
+<li><strong>Rank:</strong> 1 (moved from rank 4)</li>
+<li><strong>AI Chips &amp; Semiconductors</strong></li>
+<li><strong>Return:</strong> +3.63% | <strong>5-Day Trend:</strong> +2.03%</li>
+<li><strong>Rank:</strong> 2 (moved from rank 3)</li>
+<li><strong>AI Data &amp; Analytics</strong></li>
+<li><strong>Return:</strong> +3.15% | <strong>5-Day Trend:</strong> +4.77%</li>
+<li><strong>Rank:</strong> 3 (moved from rank 5)</li>
+<li><strong>Cloud &amp; AI Infrastructure</strong></li>
+<li><strong>Return:</strong> +2.05% | <strong>5-Day Trend:</strong> +1.06%</li>
+<li><strong>Rank:</strong> 4 (moved from rank 8)</li>
+<li><strong>AI Networking &amp; Data Center Infrastructure</strong></li>
+<li><strong>Return:</strong> +1.92% | <strong>5-Day Trend:</strong> +4.37%</li>
+<li><strong>Rank:</strong> 5 (moved from rank 1)</li>
+</ol>
+<hr />
+<h2>Bottom AI Themes</h2>
+<ol>
+<li><strong>Consumer Internet &amp; AI Platforms</strong></li>
+<li><strong>Return:</strong> -1.38% | <strong>5-Day Trend:</strong> +1.18%</li>
+<li><strong>Rank:</strong> 10 (remained at rank 10)</li>
+<li><strong>Enterprise AI Software</strong></li>
+<li><strong>Return:</strong> +0.81% | <strong>5-Day Trend:</strong> +4.19%</li>
+<li><strong>Rank:</strong> 9 (remained at rank 9)</li>
+<li><strong>Cybersecurity AI</strong></li>
+<li><strong>Return:</strong> +1.05% | <strong>5-Day Trend:</strong> +14.99%</li>
+<li><strong>Rank:</strong> 8 (moved from rank 6)</li>
+<li><strong>Robotics &amp; Industrial Automation</strong></li>
+<li><strong>Return:</strong> +1.48% | <strong>5-Day Trend:</strong> +1.26%</li>
+<li><strong>Rank:</strong> 7 (moved from rank 2)</li>
+<li><strong>Autonomous Vehicles &amp; Mobility AI</strong></li>
+<li><strong>Return:</strong> +1.67% | <strong>5-Day Trend:</strong> -1.52%</li>
+<li><strong>Rank:</strong> 6 (moved from rank 7)</li>
+</ol>
+<hr />
+<h2>Top Performing AI Stocks</h2>
+<ol>
+<li><strong>TEM</strong> (Healthcare AI)</li>
+<li><strong>Close:</strong> 80.36 (+14.85%) | <strong>5-Day Trend:</strong> +36.81%</li>
+<li><strong>Day Range:</strong> $72.61 – $81.28 | <strong>Volume:</strong> 17,128,001</li>
+<li><strong>Rank:</strong> 1 (moved from rank 8)</li>
+<li><strong>AMD</strong> (AI Chips &amp; Semiconductors)</li>
+<li><strong>Close:</strong> 545.09 (+6.36%) | <strong>5-Day Trend:</strong> +8.24%</li>
+<li><strong>Day Range:</strong> $527.60 – $551.42 | <strong>Volume:</strong> 28,471,628</li>
+<li><strong>Rank:</strong> 2 (moved from rank 7)</li>
+<li><strong>WDAY</strong> (Enterprise AI Software)</li>
+<li><strong>Close:</strong> 199.28 (+6.14%) | <strong>5-Day Trend:</strong> +7.67%</li>
+<li><strong>Day Range:</strong> $183.60 – $201.00 | <strong>Volume:</strong> 4,253,216</li>
+<li><strong>Rank:</strong> 3 (moved from rank 41)</li>
+<li><strong>MU</strong> (AI Chips &amp; Semiconductors)</li>
+<li><strong>Close:</strong> 977.5 (+5.50%) | <strong>5-Day Trend:</strong> +0.01%</li>
+<li><strong>Day Range:</strong> $953.50 – $986.20 | <strong>Volume:</strong> 22,091,591</li>
+<li><strong>Rank:</strong> 4 (moved from rank 22)</li>
+<li><strong>ORCL</strong> (Cloud &amp; AI Infrastructure)</li>
+<li><strong>Close:</strong> 150.59 (+5.19%) | <strong>5-Day Trend:</strong> -1.54%</li>
+<li><strong>Day Range:</strong> $146.15 – $152.00 | <strong>Volume:</strong> 27,742,416</li>
+<li><strong>Rank:</strong> 5 (moved from rank 6)</li>
+<li><strong>ESTC</strong> (AI Data &amp; Analytics)</li>
+<li><strong>Close:</strong> 88.97 (+4.63%) | <strong>5-Day Trend:</strong> +6.58%</li>
+<li><strong>Day Range:</strong> $83.81 – $89.73 | <strong>Volume:</strong> 1,997,770</li>
+<li><strong>Rank:</strong> 6 (moved from rank 23)</li>
+<li><strong>MDB</strong> (AI Data &amp; Analytics)</li>
+<li><strong>Close:</strong> 393.42 (+4.54%) | <strong>5-Day Trend:</strong> +5.23%</li>
+<li><strong>Day Range:</strong> $372.00 – $403.00 | <strong>Volume:</strong> 1,546,005</li>
+<li><strong>Rank:</strong> 7 (moved from rank 25)</li>
+<li><strong>DELL</strong> (AI Networking &amp; Data Center Infrastructure)</li>
+<li><strong>Close:</strong> 588.4 (+4.46%) | <strong>5-Day Trend:</strong> +16.14%</li>
+<li><strong>Day Range:</strong> $565.50 – $593.98 | <strong>Volume:</strong> 9,350,698</li>
+<li><strong>Rank:</strong> 8 (moved from rank 1)</li>
+<li><strong>TER</strong> (Robotics &amp; Industrial Automation)</li>
+<li><strong>Close:</strong> 353.13 (+3.51%) | <strong>5-Day Trend:</strong> -4.61%</li>
+<li><strong>Day Range:</strong> $350.00 – $360.26 | <strong>Volume:</strong> 2,598,552</li>
+<li><strong>Rank:</strong> 9 (moved from rank 2)</li>
+<li><strong>SYM</strong> (Robotics &amp; Industrial Automation)<ul>
+<li><strong>Close:</strong> 44.61 (+3.48%) | <strong>5-Day Trend:</strong> +8.54%</li>
+<li><strong>Day Range:</strong> $43.92 – $45.55 | <strong>Volume:</strong> 2,365,687</li>
+<li><strong>Rank:</strong> 10 (moved from rank 15)</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Bottom Performing AI Stocks</h2>
+<ol>
+<li><strong>SPOT</strong> (Consumer Internet &amp; AI Platforms)</li>
+<li><strong>Close:</strong> 528.84 (-3.40%) | <strong>5-Day Trend:</strong> +1.36%</li>
+<li><strong>Day Range:</strong> $528.71 – $553.77 | <strong>Volume:</strong> 1,284,098</li>
+<li><strong>Rank:</strong> 50 (moved from rank 44)</li>
+<li><strong>CRM</strong> (Enterprise AI Software)</li>
+<li><strong>Close:</strong> 242.85 (-3.07%) | <strong>5-Day Trend:</strong> -0.06%</li>
+<li><strong>Day Range:</strong> $241.52 – $247.00 | <strong>Volume:</strong> 16,611,316</li>
+<li><strong>Rank:</strong> 49 (moved from rank 45)</li>
+<li><strong>PINS</strong> (Consumer Internet &amp; AI Platforms)</li>
+<li><strong>Close:</strong> 18.31 (-1.82%) | <strong>5-Day Trend:</strong> -2.50%</li>
+<li><strong>Day Range:</strong> $18.20 – $18.81 | <strong>Volume:</strong> 29,471,591</li>
+<li><strong>Rank:</strong> 48 (moved from rank 28)</li>
+<li><strong>TTD</strong> (Consumer Internet &amp; AI Platforms)</li>
+<li><strong>Close:</strong> 14.26 (-1.59%) | <strong>5-Day Trend:</strong> +2.08%</li>
+<li><strong>Day Range:</strong> $14.21 – $14.87 | <strong>Volume:</strong> 18,371,788</li>
+<li><strong>Rank:</strong> 47 (moved from rank 49)</li>
+<li><strong>NFLX</strong> (Consumer Internet &amp; AI Platforms)</li>
+<li><strong>Close:</strong> 75.31 (-1.44%) | <strong>5-Day Trend:</strong> -0.92%</li>
+<li><strong>Day Range:</strong> $75.30 – $76.96 | <strong>Volume:</strong> 28,167,578</li>
+<li><strong>Rank:</strong> 46 (moved from rank 43)</li>
+<li><strong>ROK</strong> (Robotics &amp; Industrial Automation)</li>
+<li><strong>Close:</strong> 410.05 (-1.17%) | <strong>5-Day Trend:</strong> -2.69%</li>
+<li><strong>Day Range:</strong> $406.92 – $424.24 | <strong>Volume:</strong> 990,557</li>
+<li><strong>Rank:</strong> 45 (moved from rank 27)</li>
+<li><strong>NOW</strong> (Enterprise AI Software)</li>
+<li><strong>Close:</strong> 138.47 (-0.97%) | <strong>5-Day Trend:</strong> +5.57%</li>
+<li><strong>Day Range:</strong> $136.00 – $140.54 | <strong>Volume:</strong> 9,857,075</li>
+<li><strong>Rank:</strong> 44 (moved from rank 40)</li>
+<li><strong>VEEV</strong> (Healthcare AI)</li>
+<li><strong>Close:</strong> 263.75 (-0.43%) | <strong>5-Day Trend:</strong> +1.06%</li>
+<li><strong>Day Range:</strong> $260.45 – $266.71 | <strong>Volume:</strong> 1,120,870</li>
+<li><strong>Rank:</strong> 43 (moved from rank 31)</li>
+<li><strong>PANW</strong> (Cybersecurity AI)</li>
+<li><strong>Close:</strong> 375.06 (-0.16%) | <strong>5-Day Trend:</strong> +10.80%</li>
+<li><strong>Day Range:</strong> $360.66 – $383.12 | <strong>Volume:</strong> 6,294,772</li>
+<li><strong>Rank:</strong> 42 (moved from rank 20)</li>
+<li><strong>UBER</strong> (Autonomous Vehicles &amp; Mobility AI)<ul>
+<li><strong>Close:</strong> 70.87 (-0.14%) | <strong>5-Day Trend:</strong> -2.33%</li>
+<li><strong>Day Range:</strong> $70.24 – $71.64 | <strong>Volume:</strong> 19,808,395</li>
+<li><strong>Rank:</strong> 41 (moved from rank 30)</li>
+</ul>
+</li>
+</ol>
+</div>
+
+<script>
+new Chart(document.getElementById('volChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ["AI Chips & Semiconductors", "AI Data & Analytics", "AI Networking & Data Center Infrastructure", "Autonomous Vehicles & Mobility AI", "Cloud & AI Infrastructure", "Consumer Internet & AI Platforms", "Cybersecurity AI", "Enterprise AI Software", "Healthcare AI", "Robotics & Industrial Automation"],
+    datasets: [{ data: [194347734.17832997, 13579235.454378, 38014154.445185006, 81278020.59556301, 101223614.39533001, 93223050.791297, 41714125.190749995, 59614277.919245005, 24932789.806580003, 9396668.633631999], backgroundColor: [
+      '#2f5fd6','#5b8def','#7fa3ff','#9fc0ff','#1b7f3b','#3fbf6f','#c62828','#f2685f','#b98b00','#d6b24a'
+    ] }]
+  },
+  options: { plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } } } }
+});
+new Chart(document.getElementById('moversChart'), {
+  type: 'bar',
+  data: {
+    labels: ["TEM", "AMD", "WDAY", "MU", "ORCL", "ESTC", "MDB", "DELL", "TER", "SYM", "UBER", "PANW", "VEEV", "NOW", "ROK", "NFLX", "TTD", "PINS", "CRM", "SPOT"],
+    datasets: [{
+      data: [14.85, 6.36, 6.14, 5.5, 5.19, 4.63, 4.54, 4.46, 3.51, 3.48, -0.14, -0.16, -0.43, -0.97, -1.17, -1.44, -1.59, -1.82, -3.07, -3.4],
+      backgroundColor: [14.85, 6.36, 6.14, 5.5, 5.19, 4.63, 4.54, 4.46, 3.51, 3.48, -0.14, -0.16, -0.43, -0.97, -1.17, -1.44, -1.59, -1.82, -3.07, -3.4].map(v => v >= 0 ? '#1b7f3b' : '#c62828')
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    plugins: { legend: { display: false } },
+    scales: { x: { title: { display: true, text: 'Daily return (%)' } } }
+  }
+});
+</script>
+
+<footer>Daily AI Movers Agent - numbers sourced from Massive, report text generated from those numbers only.</footer>
+</div>
+</body>
+</html>

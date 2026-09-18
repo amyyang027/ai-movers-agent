@@ -35,12 +35,12 @@ jobs:
         run: |
           git config user.name "ai-movers-bot"
           git config user.email "actions@users.noreply.github.com"
-          mkdir -p reports
-          if [ -z "$(git status --porcelain reports/)" ]; then
+          mkdir -p reports docs
+          if [ -z "$(git status --porcelain reports/ docs/)" ]; then
             echo "No new report to commit (non-trading day or already up to date)."
             exit 0
           fi
-          git add reports/
+          git add reports/ docs/
           git commit -m "Daily report: $(date -u +%F)"
           git push
 
