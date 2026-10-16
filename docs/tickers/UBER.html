@@ -19,9 +19,9 @@
 <div class="card">
 <h2>At a Glance</h2>
 <div class="stat-row">
-<div class="stat"><div class="value ">$69.22</div><div class="label">Latest Close</div></div>
-<div class="stat"><div class="value down">-0.29%</div><div class="label">Latest Return</div></div>
-<div class="stat"><div class="value ">#27 of tracked stocks</div><div class="label">Latest Rank</div></div>
+<div class="stat"><div class="value ">$70.35</div><div class="label">Latest Close</div></div>
+<div class="stat"><div class="value down">-1.29%</div><div class="label">Latest Return</div></div>
+<div class="stat"><div class="value ">#10 of tracked stocks</div><div class="label">Latest Rank</div></div>
 <div class="stat"><div class="value ">Autonomous Vehicles & Mobility AI</div><div class="label">Theme</div></div>
 </div>
 </div>
@@ -29,13 +29,14 @@
 <div class="card">
 <h2>Price History</h2>
 <canvas id="priceChart"></canvas>
-<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 5 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
+<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 6 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
 </div>
 
 <div class="card">
 <h2>Daily Log</h2>
 <table>
 <tr><th>Date</th><th class="num">Close</th><th class="num">Return</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td>2026-10-16</td><td class="num">$70.35</td><td class="num down">-1.29%</td><td class="num">14,485,305</td><td class="num">#10</td></tr>
 <tr><td>2026-09-24</td><td class="num">$69.22</td><td class="num down">-0.29%</td><td class="num">14,467,112</td><td class="num">#27</td></tr>
 <tr><td>2026-09-22</td><td class="num">$69.89</td><td class="num down">-1.34%</td><td class="num">26,407,128</td><td class="num">#39</td></tr>
 <tr><td>2026-09-18</td><td class="num">$70.50</td><td class="num down">-0.52%</td><td class="num">20,645,280</td><td class="num">#21</td></tr>
@@ -48,10 +49,10 @@
 new Chart(document.getElementById('priceChart'), {
   type: 'line',
   data: {
-    labels: ["2026-09-16", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-24"],
+    labels: ["2026-09-16", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-24", "2026-10-16"],
     datasets: [{
       label: 'UBER close ($)',
-      data: [70.97, 70.87, 70.5, 69.89, 69.22],
+      data: [70.97, 70.87, 70.5, 69.89, 69.22, 70.35],
       borderColor: '#2f5fd6',
       backgroundColor: 'rgba(47,95,214,0.1)',
       tension: 0.2,
