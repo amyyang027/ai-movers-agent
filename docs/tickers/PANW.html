@@ -19,9 +19,9 @@
 <div class="card">
 <h2>At a Glance</h2>
 <div class="stat-row">
-<div class="stat"><div class="value ">$342.00</div><div class="label">Latest Close</div></div>
-<div class="stat"><div class="value down">-7.63%</div><div class="label">Latest Return</div></div>
-<div class="stat"><div class="value ">#46 of tracked stocks</div><div class="label">Latest Rank</div></div>
+<div class="stat"><div class="value ">$380.55</div><div class="label">Latest Close</div></div>
+<div class="stat"><div class="value up">+7.22%</div><div class="label">Latest Return</div></div>
+<div class="stat"><div class="value ">#3 of tracked stocks</div><div class="label">Latest Rank</div></div>
 <div class="stat"><div class="value ">Cybersecurity AI</div><div class="label">Theme</div></div>
 </div>
 </div>
@@ -29,13 +29,14 @@
 <div class="card">
 <h2>Price History</h2>
 <canvas id="priceChart"></canvas>
-<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 6 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
+<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 7 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
 </div>
 
 <div class="card">
 <h2>Daily Log</h2>
 <table>
 <tr><th>Date</th><th class="num">Close</th><th class="num">Return</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td>2026-10-23</td><td class="num">$380.55</td><td class="num up">+7.22%</td><td class="num">6,587,940</td><td class="num">#3</td></tr>
 <tr><td>2026-10-16</td><td class="num">$342.00</td><td class="num down">-7.63%</td><td class="num">8,770,236</td><td class="num">#46</td></tr>
 <tr><td>2026-09-24</td><td class="num">$389.92</td><td class="num down">-0.86%</td><td class="num">3,970,184</td><td class="num">#37</td></tr>
 <tr><td>2026-09-22</td><td class="num">$374.57</td><td class="num up">+0.76%</td><td class="num">8,109,144</td><td class="num">#15</td></tr>
@@ -49,10 +50,10 @@
 new Chart(document.getElementById('priceChart'), {
   type: 'line',
   data: {
-    labels: ["2026-09-16", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-24", "2026-10-16"],
+    labels: ["2026-09-16", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-24", "2026-10-16", "2026-10-23"],
     datasets: [{
       label: 'PANW close ($)',
-      data: [375.65, 375.06, 363.58, 374.57, 389.92, 342],
+      data: [375.65, 375.06, 363.58, 374.57, 389.92, 342, 380.55],
       borderColor: '#2f5fd6',
       backgroundColor: 'rgba(47,95,214,0.1)',
       tension: 0.2,

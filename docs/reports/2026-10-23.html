@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Movers - 2026-10-23</title>
+<link rel="stylesheet" href="../style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+<div class="page">
+<nav class="crumbs"><a href="../index.html">Home</a> / 2026-10-23</nav>
+
+<header class="masthead">
+<h1>AI Movers - 2026-10-23</h1>
+<div class="sub">Daily recap of 50 tracked AI-related stocks across 10 themes</div>
+</header>
+
+<div class="card">
+<h2>At a Glance</h2>
+<div class="stat-row">
+<div class="stat"><div class="value up">31</div><div class="label">Stocks Up</div></div>
+<div class="stat"><div class="value down">18</div><div class="label">Stocks Down</div></div>
+<div class="stat"><div class="value ">1</div><div class="label">Stocks Flat</div></div>
+<div class="stat"><div class="value down">-0.52%</div><div class="label">S&amp;P 500 (SPY)</div></div>
+</div>
+</div>
+
+<div class="charts">
+<div class="card"><h2>Volume by Theme</h2><canvas id="volChart"></canvas></div>
+<div class="card"><h2>Top / Bottom Movers</h2><canvas id="moversChart"></canvas></div>
+</div>
+
+<div class="card">
+<h2>Themes</h2>
+<table>
+<tr><th>Theme</th><th class="num">Return</th><th class="num">5d Trend</th><th class="num">Rank</th></tr>
+<tr><td>Cybersecurity AI</td><td class="num up">+6.70%</td><td class="num">+13.04%</td><td class="num">#1</td></tr>
+<tr><td>AI Data & Analytics</td><td class="num up">+3.72%</td><td class="num">+9.37%</td><td class="num">#2</td></tr>
+<tr><td>Healthcare AI</td><td class="num up">+1.32%</td><td class="num">+4.77%</td><td class="num">#3</td></tr>
+<tr><td>AI Chips & Semiconductors</td><td class="num up">+1.07%</td><td class="num">-0.40%</td><td class="num">#4</td></tr>
+<tr><td>AI Networking & Data Center Infrastructure</td><td class="num up">+0.53%</td><td class="num">-2.28%</td><td class="num">#5</td></tr>
+<tr><td>Autonomous Vehicles & Mobility AI</td><td class="num down">-2.84%</td><td class="num">-4.82%</td><td class="num">#10</td></tr>
+<tr><td>Consumer Internet & AI Platforms</td><td class="num down">-1.31%</td><td class="num">+0.45%</td><td class="num">#9</td></tr>
+<tr><td>Enterprise AI Software</td><td class="num down">-0.33%</td><td class="num">+7.73%</td><td class="num">#8</td></tr>
+<tr><td>Cloud & AI Infrastructure</td><td class="num down">-0.09%</td><td class="num">-0.01%</td><td class="num">#7</td></tr>
+<tr><td>Robotics & Industrial Automation</td><td class="num up">+0.31%</td><td class="num">+1.04%</td><td class="num">#6</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Top 10 Stocks</h2>
+<table>
+<tr><th>Ticker</th><th>Theme</th><th class="num">Return</th><th class="num">5d Trend</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td><a class="ticker" href="../tickers/CRWD.html">CRWD</a></td><td>Cybersecurity AI</td><td class="num up">+8.25%</td><td class="num">+13.27%</td><td class="num">13,393,905</td><td class="num">#1</td></tr>
+<tr><td><a class="ticker" href="../tickers/ZS.html">ZS</a></td><td>Cybersecurity AI</td><td class="num up">+7.31%</td><td class="num">+23.04%</td><td class="num">3,988,622</td><td class="num">#2</td></tr>
+<tr><td><a class="ticker" href="../tickers/PANW.html">PANW</a></td><td>Cybersecurity AI</td><td class="num up">+7.22%</td><td class="num">+11.27%</td><td class="num">6,587,940</td><td class="num">#3</td></tr>
+<tr><td><a class="ticker" href="../tickers/S.html">S</a></td><td>Cybersecurity AI</td><td class="num up">+6.67%</td><td class="num">+11.21%</td><td class="num">18,429,327</td><td class="num">#4</td></tr>
+<tr><td><a class="ticker" href="../tickers/TEM.html">TEM</a></td><td>Healthcare AI</td><td class="num up">+5.96%</td><td class="num">+4.47%</td><td class="num">4,688,195</td><td class="num">#5</td></tr>
+<tr><td><a class="ticker" href="../tickers/DDOG.html">DDOG</a></td><td>AI Data & Analytics</td><td class="num up">+4.62%</td><td class="num">+9.12%</td><td class="num">2,239,804</td><td class="num">#6</td></tr>
+<tr><td><a class="ticker" href="../tickers/ESTC.html">ESTC</a></td><td>AI Data & Analytics</td><td class="num up">+4.30%</td><td class="num">+11.65%</td><td class="num">2,111,726</td><td class="num">#7</td></tr>
+<tr><td><a class="ticker" href="../tickers/FTNT.html">FTNT</a></td><td>Cybersecurity AI</td><td class="num up">+4.05%</td><td class="num">+6.42%</td><td class="num">3,224,922</td><td class="num">#8</td></tr>
+<tr><td><a class="ticker" href="../tickers/SNOW.html">SNOW</a></td><td>AI Data & Analytics</td><td class="num up">+3.65%</td><td class="num">+6.06%</td><td class="num">3,164,602</td><td class="num">#9</td></tr>
+<tr><td><a class="ticker" href="../tickers/AI.html">AI</a></td><td>AI Data & Analytics</td><td class="num up">+3.57%</td><td class="num">+10.07%</td><td class="num">5,850,364</td><td class="num">#10</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Bottom 10 Stocks</h2>
+<table>
+<tr><th>Ticker</th><th>Theme</th><th class="num">Return</th><th class="num">5d Trend</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td><a class="ticker" href="../tickers/MBLY.html">MBLY</a></td><td>Autonomous Vehicles & Mobility AI</td><td class="num down">-5.90%</td><td class="num">-9.42%</td><td class="num">13,252,108</td><td class="num">#50</td></tr>
+<tr><td><a class="ticker" href="../tickers/UBER.html">UBER</a></td><td>Autonomous Vehicles & Mobility AI</td><td class="num down">-3.43%</td><td class="num">-5.19%</td><td class="num">18,765,010</td><td class="num">#49</td></tr>
+<tr><td><a class="ticker" href="../tickers/SYM.html">SYM</a></td><td>Robotics & Industrial Automation</td><td class="num down">-2.68%</td><td class="num">+1.32%</td><td class="num">1,598,302</td><td class="num">#48</td></tr>
+<tr><td><a class="ticker" href="../tickers/PINS.html">PINS</a></td><td>Consumer Internet & AI Platforms</td><td class="num down">-2.66%</td><td class="num">+1.87%</td><td class="num">9,603,988</td><td class="num">#47</td></tr>
+<tr><td><a class="ticker" href="../tickers/APTV.html">APTV</a></td><td>Autonomous Vehicles & Mobility AI</td><td class="num down">-2.56%</td><td class="num">-4.84%</td><td class="num">2,993,803</td><td class="num">#46</td></tr>
+<tr><td><a class="ticker" href="../tickers/ADBE.html">ADBE</a></td><td>Enterprise AI Software</td><td class="num down">-2.49%</td><td class="num">+7.59%</td><td class="num">3,083,925</td><td class="num">#45</td></tr>
+<tr><td><a class="ticker" href="../tickers/NFLX.html">NFLX</a></td><td>Consumer Internet & AI Platforms</td><td class="num down">-1.79%</td><td class="num">-6.64%</td><td class="num">37,842,155</td><td class="num">#44</td></tr>
+<tr><td><a class="ticker" href="../tickers/GM.html">GM</a></td><td>Autonomous Vehicles & Mobility AI</td><td class="num down">-1.67%</td><td class="num">-9.58%</td><td class="num">6,713,500</td><td class="num">#43</td></tr>
+<tr><td><a class="ticker" href="../tickers/GOOGL.html">GOOGL</a></td><td>Cloud & AI Infrastructure</td><td class="num down">-1.24%</td><td class="num">-5.98%</td><td class="num">17,562,782</td><td class="num">#42</td></tr>
+<tr><td><a class="ticker" href="../tickers/TTD.html">TTD</a></td><td>Consumer Internet & AI Platforms</td><td class="num down">-1.22%</td><td class="num">+6.30%</td><td class="num">13,021,027</td><td class="num">#41</td></tr>
+</table>
+</div>
+
+<div class="card narrative">
+<h2>Summary</h2>
+<h1>AI Market Recap - 2026-10-23</h1>
+<h2>Market Overview</h2>
+<p>Market breadth was positive with 31 stocks up, 18 down, and 1 flat out of 50 total stocks tracked, while the S&amp;P 500 (SPY) returned -0.52%.</p>
+<h2>Top Themes</h2>
+<p>Cybersecurity AI led top themes with a +6.70% gain as it moved from rank 9 to rank 1, while AI Data &amp; Analytics gained +3.72% to move from rank 10 to rank 2.</p>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Return</th>
+<th>5d Trend</th>
+<th>Rank</th>
+<th>Prev Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cybersecurity AI</td>
+<td>+6.70%</td>
+<td>+13.04%</td>
+<td>1</td>
+<td>9</td>
+</tr>
+<tr>
+<td>AI Data &amp; Analytics</td>
+<td>+3.72%</td>
+<td>+9.37%</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Healthcare AI</td>
+<td>+1.32%</td>
+<td>+4.77%</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>AI Chips &amp; Semiconductors</td>
+<td>+1.07%</td>
+<td>-0.40%</td>
+<td>4</td>
+<td>7</td>
+</tr>
+<tr>
+<td>AI Networking &amp; Data Center Infrastructure</td>
+<td>+0.53%</td>
+<td>-2.28%</td>
+<td>5</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h2>Bottom Themes</h2>
+<p>Autonomous Vehicles &amp; Mobility AI was the weakest theme with a -2.84% return, dropping from rank 1 to rank 10.</p>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Return</th>
+<th>5d Trend</th>
+<th>Rank</th>
+<th>Prev Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Autonomous Vehicles &amp; Mobility AI</td>
+<td>-2.84%</td>
+<td>-4.82%</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Consumer Internet &amp; AI Platforms</td>
+<td>-1.31%</td>
+<td>+0.45%</td>
+<td>9</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Enterprise AI Software</td>
+<td>-0.33%</td>
+<td>+7.73%</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Cloud &amp; AI Infrastructure</td>
+<td>-0.09%</td>
+<td>-0.01%</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Robotics &amp; Industrial Automation</td>
+<td>+0.31%</td>
+<td>+1.04%</td>
+<td>6</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h2>Top Stocks</h2>
+<p>CRWD was the top-performing stock with a +8.25% return, climbing from rank 42 to rank 1, while ZS gained +7.31% to move from rank 38 to rank 2.</p>
+<table>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Theme</th>
+<th>Return</th>
+<th>5d Trend</th>
+<th>High</th>
+<th>Low</th>
+<th>Volume</th>
+<th>Rank</th>
+<th>Prev Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CRWD</td>
+<td>Cybersecurity AI</td>
+<td>+8.25%</td>
+<td>+13.27%</td>
+<td>$257.91</td>
+<td>$234.79</td>
+<td>13,393,905</td>
+<td>1</td>
+<td>42</td>
+</tr>
+<tr>
+<td>ZS</td>
+<td>Cybersecurity AI</td>
+<td>+7.31%</td>
+<td>+23.04%</td>
+<td>$255.55</td>
+<td>$234.19</td>
+<td>3,988,622</td>
+<td>2</td>
+<td>38</td>
+</tr>
+<tr>
+<td>PANW</td>
+<td>Cybersecurity AI</td>
+<td>+7.22%</td>
+<td>+11.27%</td>
+<td>$381.49</td>
+<td>$351.24</td>
+<td>6,587,940</td>
+<td>3</td>
+<td>46</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Cybersecurity AI</td>
+<td>+6.67%</td>
+<td>+11.21%</td>
+<td>$24.07</td>
+<td>$22.30</td>
+<td>18,429,327</td>
+<td>4</td>
+<td>47</td>
+</tr>
+<tr>
+<td>TEM</td>
+<td>Healthcare AI</td>
+<td>+5.96%</td>
+<td>+4.47%</td>
+<td>$68.14</td>
+<td>$62.67</td>
+<td>4,688,195</td>
+<td>5</td>
+<td>50</td>
+</tr>
+<tr>
+<td>DDOG</td>
+<td>AI Data &amp; Analytics</td>
+<td>+4.62%</td>
+<td>+9.12%</td>
+<td>$273.42</td>
+<td>$254.59</td>
+<td>2,239,804</td>
+<td>6</td>
+<td>44</td>
+</tr>
+<tr>
+<td>ESTC</td>
+<td>AI Data &amp; Analytics</td>
+<td>+4.30%</td>
+<td>+11.65%</td>
+<td>$102.68</td>
+<td>$97.00</td>
+<td>2,111,726</td>
+<td>7</td>
+<td>37</td>
+</tr>
+<tr>
+<td>FTNT</td>
+<td>Cybersecurity AI</td>
+<td>+4.05%</td>
+<td>+6.42%</td>
+<td>$180.16</td>
+<td>$171.19</td>
+<td>3,224,922</td>
+<td>8</td>
+<td>43</td>
+</tr>
+<tr>
+<td>SNOW</td>
+<td>AI Data &amp; Analytics</td>
+<td>+3.65%</td>
+<td>+6.06%</td>
+<td>$325.62</td>
+<td>$310.31</td>
+<td>3,164,602</td>
+<td>9</td>
+<td>49</td>
+</tr>
+<tr>
+<td>AI</td>
+<td>AI Data &amp; Analytics</td>
+<td>+3.57%</td>
+<td>+10.07%</td>
+<td>$12.50</td>
+<td>$11.83</td>
+<td>5,850,364</td>
+<td>10</td>
+<td>41</td>
+</tr>
+</tbody>
+</table>
+<h2>Bottom Stocks</h2>
+<p>MBLY was the lowest-performing stock with a -5.90% return, falling from rank 22 to rank 50, while UBER declined -3.43% to drop from rank 10 to rank 49.</p>
+<table>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Theme</th>
+<th>Return</th>
+<th>5d Trend</th>
+<th>High</th>
+<th>Low</th>
+<th>Volume</th>
+<th>Rank</th>
+<th>Prev Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MBLY</td>
+<td>Autonomous Vehicles &amp; Mobility AI</td>
+<td>-5.90%</td>
+<td>-9.42%</td>
+<td>$6.88</td>
+<td>$6.40</td>
+<td>13,252,108</td>
+<td>50</td>
+<td>22</td>
+</tr>
+<tr>
+<td>UBER</td>
+<td>Autonomous Vehicles &amp; Mobility AI</td>
+<td>-3.43%</td>
+<td>-5.19%</td>
+<td>$68.90</td>
+<td>$66.43</td>
+<td>18,765,010</td>
+<td>49</td>
+<td>10</td>
+</tr>
+<tr>
+<td>SYM</td>
+<td>Robotics &amp; Industrial Automation</td>
+<td>-2.68%</td>
+<td>+1.32%</td>
+<td>$40.30</td>
+<td>$38.90</td>
+<td>1,598,302</td>
+<td>48</td>
+<td>20</td>
+</tr>
+<tr>
+<td>PINS</td>
+<td>Consumer Internet &amp; AI Platforms</td>
+<td>-2.66%</td>
+<td>+1.87%</td>
+<td>$23.05</td>
+<td>$22.21</td>
+<td>9,603,988</td>
+<td>47</td>
+<td>26</td>
+</tr>
+<tr>
+<td>APTV</td>
+<td>Autonomous Vehicles &amp; Mobility AI</td>
+<td>-2.56%</td>
+<td>-4.84%</td>
+<td>$43.34</td>
+<td>$41.88</td>
+<td>2,993,803</td>
+<td>46</td>
+<td>5</td>
+</tr>
+<tr>
+<td>ADBE</td>
+<td>Enterprise AI Software</td>
+<td>-2.49%</td>
+<td>+7.59%</td>
+<td>$271.50</td>
+<td>$262.78</td>
+<td>3,083,925</td>
+<td>45</td>
+<td>21</td>
+</tr>
+<tr>
+<td>NFLX</td>
+<td>Consumer Internet &amp; AI Platforms</td>
+<td>-1.79%</td>
+<td>-6.64%</td>
+<td>$67.82</td>
+<td>$65.78</td>
+<td>37,842,155</td>
+<td>44</td>
+<td>23</td>
+</tr>
+<tr>
+<td>GM</td>
+<td>Autonomous Vehicles &amp; Mobility AI</td>
+<td>-1.67%</td>
+<td>-9.58%</td>
+<td>$76.18</td>
+<td>$74.59</td>
+<td>6,713,500</td>
+<td>43</td>
+<td>2</td>
+</tr>
+<tr>
+<td>GOOGL</td>
+<td>Cloud &amp; AI Infrastructure</td>
+<td>-1.24%</td>
+<td>-5.98%</td>
+<td>$324.53</td>
+<td>$320.18</td>
+<td>17,562,782</td>
+<td>42</td>
+<td>19</td>
+</tr>
+<tr>
+<td>TTD</td>
+<td>Consumer Internet &amp; AI Platforms</td>
+<td>-1.22%</td>
+<td>+6.30%</td>
+<td>$13.11</td>
+<td>$12.84</td>
+<td>13,021,027</td>
+<td>41</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<script>
+new Chart(document.getElementById('volChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ["AI Chips & Semiconductors", "AI Data & Analytics", "AI Networking & Data Center Infrastructure", "Autonomous Vehicles & Mobility AI", "Cloud & AI Infrastructure", "Consumer Internet & AI Platforms", "Cybersecurity AI", "Enterprise AI Software", "Healthcare AI", "Robotics & Industrial Automation"],
+    datasets: [{ data: [149186263.873596, 14660656.70838, 30911959.576520998, 76469433.33613, 81701018.05772799, 77733845.63573699, 45624716.875476, 39635258.153594, 10628001.472168, 9520626.035482], backgroundColor: [
+      '#2f5fd6','#5b8def','#7fa3ff','#9fc0ff','#1b7f3b','#3fbf6f','#c62828','#f2685f','#b98b00','#d6b24a'
+    ] }]
+  },
+  options: { plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } } } }
+});
+new Chart(document.getElementById('moversChart'), {
+  type: 'bar',
+  data: {
+    labels: ["CRWD", "ZS", "PANW", "S", "TEM", "DDOG", "ESTC", "FTNT", "SNOW", "AI", "TTD", "GOOGL", "GM", "NFLX", "ADBE", "APTV", "PINS", "SYM", "UBER", "MBLY"],
+    datasets: [{
+      data: [8.25, 7.31, 7.22, 6.67, 5.96, 4.62, 4.3, 4.05, 3.65, 3.57, -1.22, -1.24, -1.67, -1.79, -2.49, -2.56, -2.66, -2.68, -3.43, -5.9],
+      backgroundColor: [8.25, 7.31, 7.22, 6.67, 5.96, 4.62, 4.3, 4.05, 3.65, 3.57, -1.22, -1.24, -1.67, -1.79, -2.49, -2.56, -2.66, -2.68, -3.43, -5.9].map(v => v >= 0 ? '#1b7f3b' : '#c62828')
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    plugins: { legend: { display: false } },
+    scales: { x: { title: { display: true, text: 'Daily return (%)' } } }
+  }
+});
+</script>
+
+<footer>Daily AI Movers Agent - numbers sourced from Massive, report text generated from those numbers only.</footer>
+</div>
+</body>
+</html>

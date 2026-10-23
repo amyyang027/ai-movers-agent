@@ -19,9 +19,9 @@
 <div class="card">
 <h2>At a Glance</h2>
 <div class="stat-row">
-<div class="stat"><div class="value ">$310.36</div><div class="label">Latest Close</div></div>
-<div class="stat"><div class="value down">-0.85%</div><div class="label">Latest Return</div></div>
-<div class="stat"><div class="value ">#7 of tracked stocks</div><div class="label">Latest Rank</div></div>
+<div class="stat"><div class="value ">$323.04</div><div class="label">Latest Close</div></div>
+<div class="stat"><div class="value up">+0.15%</div><div class="label">Latest Return</div></div>
+<div class="stat"><div class="value ">#28 of tracked stocks</div><div class="label">Latest Rank</div></div>
 <div class="stat"><div class="value ">Healthcare AI</div><div class="label">Theme</div></div>
 </div>
 </div>
@@ -29,13 +29,14 @@
 <div class="card">
 <h2>Price History</h2>
 <canvas id="priceChart"></canvas>
-<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 6 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
+<p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 10px;">Showing all 7 stored day(s) of history for this ticker. This grows every time the agent runs, so the chart gets longer over time.</p>
 </div>
 
 <div class="card">
 <h2>Daily Log</h2>
 <table>
 <tr><th>Date</th><th class="num">Close</th><th class="num">Return</th><th class="num">Volume</th><th class="num">Rank</th></tr>
+<tr><td>2026-10-23</td><td class="num">$323.04</td><td class="num up">+0.15%</td><td class="num">1,371,291</td><td class="num">#28</td></tr>
 <tr><td>2026-10-16</td><td class="num">$310.36</td><td class="num down">-0.85%</td><td class="num">1,730,704</td><td class="num">#7</td></tr>
 <tr><td>2026-09-24</td><td class="num">$274.84</td><td class="num up">+1.51%</td><td class="num">1,379,945</td><td class="num">#5</td></tr>
 <tr><td>2026-09-22</td><td class="num">$260.91</td><td class="num down">-0.15%</td><td class="num">1,819,282</td><td class="num">#26</td></tr>
@@ -49,10 +50,10 @@
 new Chart(document.getElementById('priceChart'), {
   type: 'line',
   data: {
-    labels: ["2026-09-16", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-24", "2026-10-16"],
+    labels: ["2026-09-16", "2026-09-17", "2026-09-18", "2026-09-22", "2026-09-24", "2026-10-16", "2026-10-23"],
     datasets: [{
       label: 'VEEV close ($)',
-      data: [264.9, 263.75, 260.21, 260.91, 274.84, 310.36],
+      data: [264.9, 263.75, 260.21, 260.91, 274.84, 310.36, 323.04],
       borderColor: '#2f5fd6',
       backgroundColor: 'rgba(47,95,214,0.1)',
       tension: 0.2,
